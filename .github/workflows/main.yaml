@@ -7,3 +7,4 @@ jobs:
             distro: noble
             workspace_github_repo: asherikov/px4ws
             workspace_version: ${{ github.sha }}
+            profiles: '["static_checks", "reldebug", "deb"]'

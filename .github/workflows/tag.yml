@@ -13,16 +13,6 @@ jobs:
         permissions:
             contents: write
 
-    deb_jammy:
-        uses: asherikov/ccws/.github/workflows/reusable_deb.yaml@master
-        with:
-            distro: jammy
-            workspace_github_repo: asherikov/sharf
-            workspace_version: ${{ github.sha }}
-            cloudsmith_repo: asherikov-aV7/all/ubuntu/jammy
-        secrets:
-            cloudsmith_token: ${{ secrets.CLOUDSMITH_API_KEY }}
-
     deb_noble:
         uses: asherikov/ccws/.github/workflows/reusable_deb.yaml@master
         with:
