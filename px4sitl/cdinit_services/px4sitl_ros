@@ -1,0 +1,7 @@
+type = internal
+
+stop-timeout = 20.0
+
+depends-on = px4sitl_gz_headless
+depends-on = px4sitl_dds_agent
+depends-on = px4sitl_gz_clock

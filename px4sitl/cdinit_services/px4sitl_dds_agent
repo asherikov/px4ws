@@ -1,0 +1,9 @@
+type = process
+load-options = sub-vars
+command = MicroXRCEAgent udp4 -p 8888
+
+stop-timeout = 20.0
+
+log-type = pipe
+
+depends-ms = cdinit_log@px4sitl_dds_agent

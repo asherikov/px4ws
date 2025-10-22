@@ -1,0 +1,21 @@
+repositories:
+    PX4-Autopilot/PX4-Autopilot:
+        type: git
+        url: https://github.com/asherikov/PX4-Autopilot.git
+        version: main
+    cdinit:
+        type: git
+        url: https://github.com/asherikov/cdinit.git
+        version: master
+    dds_agent/Micro-XRCE-DDS-Agent/Micro-XRCE-DDS-Agent:
+        type: git
+        url: https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
+        version: v2.4.3
+    dds_agent/spdlog:
+        type: git
+        url: https://github.com/gabime/spdlog.git
+        version: v1.9.2
+    px4_msgs:
+        type: git
+        url: https://github.com/asherikov/px4_msgs.git
+        version: as_disable_tests

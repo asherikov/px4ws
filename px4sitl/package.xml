@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package format="2">
+    <name>px4sitl</name>
+    <version>0.1.0</version>
+    <description>System statistics logger</description>
+    <maintainer email="asherikov@yandex.com">Alexander Sherikov</maintainer>
+    <license>Apache 2.0</license>
+
+    <export>
+        <build_type>cmake</build_type>
+    </export>
+
+    <buildtool_depend>cmake</buildtool_depend>
+
+    <exec_depend>cdinit_manager</exec_depend>
+    <exec_depend>dds_agent</exec_depend>
+    <exec_depend>px4_msgs</exec_depend>
+    <exec_depend>ros_gz</exec_depend>
+    <build_depend>libopencv-dev</build_depend>
+    <exec_depend>libopencv-dev</exec_depend>
+</package>

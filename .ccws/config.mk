@@ -1,0 +1,2 @@
+VENDOR=px4ws
+VERSION=all

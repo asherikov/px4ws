@@ -1,0 +1,9 @@
+on: [push, pull_request]
+
+jobs:
+    tests:
+        uses: asherikov/ccws/.github/workflows/reusable_test.yaml@master
+        with:
+            distro: noble
+            workspace_github_repo: asherikov/px4ws
+            workspace_version: ${{ github.sha }}
