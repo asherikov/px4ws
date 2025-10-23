@@ -159,7 +159,7 @@ Workspace status
 -----
 :::{.wide}
 ```
-tags/0.1.0-0-ge3a2ed0
+tags/0.1.0-0-g7f51bd2
 WSH: >>> status: git sources ---
 Flags: H - version hash mismatch, M - uncommited changes
 name                                                version          actual version                    HM repository
