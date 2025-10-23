@@ -23,7 +23,7 @@
   <ul>
   <li><a href="#overview" id="toc-overview"><span class="toc-section-number">1</span> Overview</a>
   <ul>
-  <li><a href="#workspace-packages" id="toc-workspace-packages"><span class="toc-section-number">1.1</span> Workspace packages</a></li>
+  <li><a href="#packages" id="toc-packages"><span class="toc-section-number">1.1</span> Packages</a></li>
   </ul></li>
   <li><a href="#usage" id="toc-usage"><span class="toc-section-number">2</span> Usage</a>
   <ul>
@@ -35,7 +35,7 @@
   </ul></li>
   </ul></li>
   <li><a href="#troubleshooting" id="toc-troubleshooting"><span class="toc-section-number">3</span> Troubleshooting</a></li>
-  <li><a href="#packages" id="toc-packages"><span class="toc-section-number">4</span> Packages</a>
+  <li><a href="#packages-1" id="toc-packages-1"><span class="toc-section-number">4</span> Packages</a>
   <ul>
   <li><a href="#dependency-graph" id="toc-dependency-graph"><span class="toc-section-number">4.1</span> Dependency graph</a></li>
   <li><a href="#doxygen-documentation" id="toc-doxygen-documentation"><span class="toc-section-number">4.2</span> Doxygen documentation</a></li>
@@ -70,7 +70,8 @@ Debian package
 </tr>
 </table>
 <p>Multi-drone PX4 SITL setup using Gazebo and ROS2. Generally follows <a href="https://docs.px4.io/main/en/sim_gazebo_gz/" class="uri">https://docs.px4.io/main/en/sim_gazebo_gz/</a>, but uses custom bringup scripts which serve as a showcase of <a href="https://github.com/asherikov/cdinit" class="uri">https://github.com/asherikov/cdinit</a>.</p>
-<h2 data-number="1.1" id="workspace-packages"><span class="header-section-number">1.1</span> Workspace packages</h2>
+<p>Workspace documentation is at <a href="http://www.sherikov.net/px4ws/" class="uri">http://www.sherikov.net/px4ws/</a>.</p>
+<h2 data-number="1.1" id="packages"><span class="header-section-number">1.1</span> Packages</h2>
 <pre><code>PX4-Autopilot/PX4-Autopilot                         main             https://github.com/asherikov/PX4-Autopilot.git
 cdinit                                              master           https://github.com/asherikov/cdinit.git
 dds_agent/Micro-XRCE-DDS-Agent/Micro-XRCE-DDS-Agent v2.4.3           https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
@@ -123,13 +124,14 @@ px4_msgs                                            as_disable_tests https://git
 # Dummy &quot;master&quot; service
 [{+}     ] px4sitl_ros</code></pre>
 <ul>
+<li>Location of the log files depends on environment variables, e.g., <code>ROS_LOG_DIR</code>, and by default it is set to <code>${HOME}/.sharf/cdinit</code>.</li>
 <li>Terminate using <code>cdinit.sh shutdown</code>. Since all processes are required, termination can also be performed by stopping a particular service, e.g., <code>cdinit.sh stop --force px4sitl_gz_clock</code>.</li>
 </ul>
 <h1 data-number="3" id="troubleshooting"><span class="header-section-number">3</span> Troubleshooting</h1>
 <ul>
 <li><code>protobuf</code> errors like the following could be caused by multiple Gazebo versions installed in parallel: <code>[libprotobuf ERROR   google/protobuf/descriptor_database.cc:121] File already exists in database:   gz/msgs/pointcloud.proto</code></li>
 </ul>
-<h1 data-number="4" id="packages"><span class="header-section-number">4</span> Packages</h1>
+<h1 data-number="4" id="packages-1"><span class="header-section-number">4</span> Packages</h1>
 <h2 data-number="4.1" id="dependency-graph"><span class="header-section-number">4.1</span> Dependency graph</h2>
 <p><a href="pkg_dependency_graph.svg"><img src="pkg_dependency_graph.svg" /></a></p>
 <h2 data-number="4.2" id="doxygen-documentation"><span class="header-section-number">4.2</span> Doxygen documentation</h2>
@@ -187,7 +189,7 @@ px4_msgs                                            as_disable_tests https://git
 <p>Total number of packages: 7</p>
 <h2 data-number="4.3" id="workspace-status"><span class="header-section-number">4.3</span> Workspace status</h2>
 <div class="wide">
-<pre><code>tags/0.1.0-0-g9898fd1
+<pre><code>tags/0.1.0-0-g50d8239
 WSH: &gt;&gt;&gt; status: git sources ---
 Flags: H - version hash mismatch, M - uncommited changes
 name                                                version          actual version                    HM repository

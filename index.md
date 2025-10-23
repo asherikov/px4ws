@@ -30,8 +30,11 @@ Multi-drone PX4 SITL setup using Gazebo and ROS2. Generally follows
 <https://docs.px4.io/main/en/sim_gazebo_gz/>, but uses custom bringup scripts
 which serve as a showcase of <https://github.com/asherikov/cdinit>.
 
-Workspace packages
-------------------
+Workspace documentation is at <http://www.sherikov.net/px4ws/>.
+
+
+Packages
+--------
 ```
 PX4-Autopilot/PX4-Autopilot                         main             https://github.com/asherikov/PX4-Autopilot.git
 cdinit                                              master           https://github.com/asherikov/cdinit.git
@@ -106,6 +109,8 @@ primarily used to setup environment and working directories.
 # Dummy "master" service
 [{+}     ] px4sitl_ros
 ```
+- Location of the log files depends on environment variables, e.g.,
+  `ROS_LOG_DIR`, and by default it is set to `${HOME}/.sharf/cdinit`.
 - Terminate using `cdinit.sh shutdown`. Since all processes are required,
   termination can also be performed by stopping a particular service, e.g.,
   `cdinit.sh stop --force px4sitl_gz_clock`.
@@ -147,7 +152,7 @@ Workspace status
 -----
 :::{.wide}
 ```
-tags/0.1.0-0-g9898fd1
+tags/0.1.0-0-g50d8239
 WSH: >>> status: git sources ---
 Flags: H - version hash mismatch, M - uncommited changes
 name                                                version          actual version                    HM repository
