@@ -81,12 +81,11 @@ px4_msgs                                            as_disable_tests https://git
 <h1 data-number="2" id="usage"><span class="header-section-number">2</span> Usage</h1>
 <h2 data-number="2.1" id="building"><span class="header-section-number">2.1</span> Building</h2>
 <ul>
-<li><p>Compilation is performed with <a href="https://github.com/asherikov/ccws" class="uri">https://github.com/asherikov/ccws</a>, although basic <code>colcon</code> build should work too.</p></li>
+<li><p>Build <code>px4sitl</code> master package. Workspace is designed to be used with <a href="https://github.com/asherikov/ccws" class="uri">https://github.com/asherikov/ccws</a>, but basic <code>colcon</code> build should work too.</p></li>
 <li><p>Dependencies can be installed with <code>rosdep</code> except a few PX4 python dependencies that are installed with cmake during build step.</p></li>
 </ul>
 <h2 data-number="2.2" id="running"><span class="header-section-number">2.2</span> Running</h2>
 <ul>
-<li>Build <code>px4sitl</code> master package.</li>
 <li>Run <code>px4sitl.sh -w walls -d 4001 "0,1.0,0,0,0,0" -d 4004 "0,-5.0,0,0,0,0"</code> where <code>-w</code> specifies world (‘default’ if not set), <code>-d</code> specifies a drone model id and its location (x,y,z,r,p,y). Numerical ids can be found in a table at <a href="https://docs.px4.io/main/en/sim_gazebo_gz/" class="uri">https://docs.px4.io/main/en/sim_gazebo_gz/</a>.</li>
 <li><code>px4sitl.sh</code> also supports headless mode, which is enabled by passing <code>-H</code> flag.</li>
 <li>Terminate by closing Gazebo gui, or with <code>cdinit.sh shutdown</code>.</li>
@@ -105,7 +104,7 @@ px4_msgs                                            as_disable_tests https://git
 # PX4 instances, number after @ symbol is a corresponding system id
 [[+]     ] px4sitl_px4@0 (pid: XXX)
 [[+]     ] px4sitl_px4@1 (pid: XXX)
-# logging services
+# logging services, cdinit_log helper adds timestamps
 [{+}     ] cdinit_log@px4sitl_dds_agent (pid: XXX)
 [{+}     ] cdinit_log@px4sitl_gz_clock (pid: XXX)
 [{+}     ] cdinit_log@px4sitl_gz_gui (pid: XXX)
@@ -189,13 +188,13 @@ px4_msgs                                            as_disable_tests https://git
 <p>Total number of packages: 7</p>
 <h2 data-number="4.3" id="workspace-status"><span class="header-section-number">4.3</span> Workspace status</h2>
 <div class="wide">
-<pre><code>tags/0.1.0-0-g50d8239
+<pre><code>tags/0.1.0-0-gc22d283
 WSH: &gt;&gt;&gt; status: git sources ---
 Flags: H - version hash mismatch, M - uncommited changes
 name                                                version          actual version                    HM repository
 ----                                                -------          --------------                    -- ----------
 PX4-Autopilot/PX4-Autopilot                         main             heads/main-0-g2e586c4                https://github.com/asherikov/PX4-Autopilot.git
-cdinit                                              master           heads/master-0-g574b897              https://github.com/asherikov/cdinit.git
+cdinit                                              master           heads/master-0-g3aef395              https://github.com/asherikov/cdinit.git
 dds_agent/Micro-XRCE-DDS-Agent/Micro-XRCE-DDS-Agent v2.4.3           tags/v2.4.3-0-g7362281               https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
 dds_agent/spdlog                                    v1.9.2           tags/v1.9.2-0-geb32206               https://github.com/gabime/spdlog.git
 px4_msgs                                            as_disable_tests heads/as_disable_tests-0-g1398c8b    https://github.com/asherikov/px4_msgs.git

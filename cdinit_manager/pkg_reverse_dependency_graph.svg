@@ -24,9 +24,9 @@
 </g>
 </g>
 <!-- cdinit_manager -->
-<g id="node2" class="node">
+<g id="node3" class="node">
 <title>cdinit_manager</title>
-<g id="a_node2"><a xlink:href="../cdinit_manager/index.html" xlink:title="cdinit_manager">
+<g id="a_node3"><a xlink:href="../cdinit_manager/index.html" xlink:title="cdinit_manager">
 <ellipse fill="none" stroke="black" cx="186.25" cy="-34" rx="82.59" ry="18"/>
 <text text-anchor="middle" x="186.25" y="-30.3" font-family="Times,serif" font-size="14.00">cdinit_manager</text>
 </a>
@@ -39,9 +39,9 @@
 <polygon fill="#ff0000" stroke="#ff0000" points="146.64,-58.14 154.1,-50.62 143.58,-51.85 146.64,-58.14"/>
 </g>
 <!-- cdinit_examples -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>cdinit_examples</title>
-<g id="a_node3"><a xlink:href="../cdinit_examples/index.html" xlink:title="cdinit_examples">
+<g id="a_node2"><a xlink:href="../cdinit_examples/index.html" xlink:title="cdinit_examples">
 <ellipse fill="none" stroke="black" cx="187.25" cy="-106" rx="85.29" ry="18"/>
 <text text-anchor="middle" x="187.25" y="-102.3" font-family="Times,serif" font-size="14.00">cdinit_examples</text>
 </a>

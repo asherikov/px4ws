@@ -52,8 +52,9 @@ Usage
 Building
 --------
 
-- Compilation is performed with <https://github.com/asherikov/ccws>, although
-  basic `colcon` build should work too.
+- Build `px4sitl` master package. Workspace is designed to be used with
+  <https://github.com/asherikov/ccws>, but basic `colcon` build should work
+  too.
 
 - Dependencies can be installed with `rosdep` except a few PX4 python
   dependencies that are installed with cmake during build step.
@@ -61,7 +62,6 @@ Building
 Running
 -------
 
-- Build `px4sitl` master package.
 - Run `px4sitl.sh -w walls -d 4001 "0,1.0,0,0,0,0" -d 4004 "0,-5.0,0,0,0,0"`
   where `-w` specifies world ('default' if not set), `-d` specifies a drone
   model id and its location (x,y,z,r,p,y). Numerical ids can be found in a
@@ -90,7 +90,7 @@ primarily used to setup environment and working directories.
 # PX4 instances, number after @ symbol is a corresponding system id
 [[+]     ] px4sitl_px4@0 (pid: XXX)
 [[+]     ] px4sitl_px4@1 (pid: XXX)
-# logging services
+# logging services, cdinit_log helper adds timestamps
 [{+}     ] cdinit_log@px4sitl_dds_agent (pid: XXX)
 [{+}     ] cdinit_log@px4sitl_gz_clock (pid: XXX)
 [{+}     ] cdinit_log@px4sitl_gz_gui (pid: XXX)
@@ -152,13 +152,13 @@ Workspace status
 -----
 :::{.wide}
 ```
-tags/0.1.0-0-g50d8239
+tags/0.1.0-0-gc22d283
 WSH: >>> status: git sources ---
 Flags: H - version hash mismatch, M - uncommited changes
 name                                                version          actual version                    HM repository
 ----                                                -------          --------------                    -- ----------
 PX4-Autopilot/PX4-Autopilot                         main             heads/main-0-g2e586c4                https://github.com/asherikov/PX4-Autopilot.git
-cdinit                                              master           heads/master-0-g574b897              https://github.com/asherikov/cdinit.git
+cdinit                                              master           heads/master-0-g3aef395              https://github.com/asherikov/cdinit.git
 dds_agent/Micro-XRCE-DDS-Agent/Micro-XRCE-DDS-Agent v2.4.3           tags/v2.4.3-0-g7362281               https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
 dds_agent/spdlog                                    v1.9.2           tags/v1.9.2-0-geb32206               https://github.com/gabime/spdlog.git
 px4_msgs                                            as_disable_tests heads/as_disable_tests-0-g1398c8b    https://github.com/asherikov/px4_msgs.git
