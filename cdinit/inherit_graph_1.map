@@ -1,0 +1,11 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,135,113,160"/>
+<area shape="rect" id="Node000001" href="$classdasynq_1_1itimer__events_1_1traits__t.html" title=" " alt="" coords="171,5,341,60"/>
+<area shape="poly" id="edge16_Node000000_Node000001" title=" " alt="" coords="84,123,119,96,160,69,182,58,184,63,163,74,122,100,88,127"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1posix__timer__events_1_1traits__t.html" title=" " alt="" coords="167,84,345,139"/>
+<area shape="poly" id="edge17_Node000000_Node000002" title=" " alt="" coords="126,132,167,125,168,130,127,138"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1timer__fd__events_1_1traits__t.html" title=" " alt="" coords="165,163,347,203"/>
+<area shape="poly" id="edge18_Node000000_Node000003" title=" " alt="" coords="127,157,165,164,164,169,126,162"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1v2_1_1child__proc__events_1_1traits__t.html" title=" " alt="" coords="161,227,351,267"/>
+<area shape="poly" id="edge19_Node000000_Node000004" title=" " alt="" coords="89,166,123,190,163,213,190,225,188,230,160,218,121,195,86,171"/>
+</map>

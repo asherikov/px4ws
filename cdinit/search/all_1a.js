@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['zero_0',['zero',['http://en.cppreference.com/w/cpp/chrono/duration/zero.html',1,'std::chrono::duration::zero()'],['http://en.cppreference.com/w/cpp/chrono/duration_values/zero.html',1,'std::chrono::duration_values::zero()'],['http://en.cppreference.com/w/cpp/chrono/duration/zero.html',1,'std::chrono::hours::zero()'],['http://en.cppreference.com/w/cpp/chrono/duration/zero.html',1,'std::chrono::microseconds::zero()'],['http://en.cppreference.com/w/cpp/chrono/duration/zero.html',1,'std::chrono::milliseconds::zero()'],['http://en.cppreference.com/w/cpp/chrono/duration/zero.html',1,'std::chrono::minutes::zero()'],['http://en.cppreference.com/w/cpp/chrono/duration/zero.html',1,'std::chrono::nanoseconds::zero()'],['http://en.cppreference.com/w/cpp/chrono/duration/zero.html',1,'std::chrono::seconds::zero()'],['../dinit-log_8h.html#a24e101a095456e946efea0b971fc2ee3a529e9e0beb5f85d1f132917c1a09860c',1,'ZERO:&#160;dinit-log.h']]],
+  ['zetta_1',['zetta',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio.html',1,'std']]]
+];

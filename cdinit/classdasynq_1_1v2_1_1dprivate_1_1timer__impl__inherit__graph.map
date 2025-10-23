@@ -1,0 +1,9 @@
+<map id="dasynq::v2::dprivate::timer_impl&lt; EventLoop, Derived &gt;" name="dasynq::v2::dprivate::timer_impl&lt; EventLoop, Derived &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,269,193,324"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1v2_1_1dprivate_1_1timer.html" title=" " alt="" coords="18,181,181,221"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="102,235,102,269,97,269,97,235"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1v2_1_1dprivate_1_1base__timer__watcher.html" title=" " alt="" coords="18,93,181,133"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="102,147,102,181,97,181,97,147"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1v2_1_1dprivate_1_1base__watcher.html" title=" " alt="" coords="22,5,177,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="102,59,102,93,97,93,97,59"/>
+</map>

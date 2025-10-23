@@ -1,0 +1,37 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classdasynq_1_1v2_1_1dprivate_1_1base__watcher.html" title=" " alt="" coords="5,236,160,276"/>
+<area shape="rect" id="Node000001" href="$classdasynq_1_1v2_1_1dprivate_1_1base__child__watcher.html" title=" " alt="" coords="208,5,391,75"/>
+<area shape="poly" id="edge23_Node000000_Node000001" title=" " alt="" coords="99,223,143,155,173,118,206,85,222,73,226,77,210,89,177,122,147,158,104,225"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1v2_1_1dprivate_1_1base__signal__watcher.html" title=" " alt="" coords="208,99,391,168"/>
+<area shape="poly" id="edge26_Node000000_Node000004" title=" " alt="" coords="126,226,207,178,228,166,231,171,209,182,129,231"/>
+<area shape="rect" id="Node000007" href="$classdasynq_1_1v2_1_1dprivate_1_1base__child__watcher.html" title=" " alt="" coords="220,193,379,247"/>
+<area shape="poly" id="edge29_Node000000_Node000007" title=" " alt="" coords="173,238,219,231,220,236,174,244"/>
+<area shape="rect" id="Node000008" href="$classdasynq_1_1v2_1_1dprivate_1_1base__fd__watcher.html" title=" " alt="" coords="222,272,377,312"/>
+<area shape="poly" id="edge30_Node000000_Node000008" title=" " alt="" coords="174,268,222,277,221,282,173,274"/>
+<area shape="rect" id="Node000014" href="$classdasynq_1_1v2_1_1dprivate_1_1base__signal__watcher.html" title=" " alt="" coords="216,337,383,391"/>
+<area shape="poly" id="edge36_Node000000_Node000014" title=" " alt="" coords="132,281,209,322,235,334,233,339,207,326,130,285"/>
+<area shape="rect" id="Node000015" href="$classdasynq_1_1v2_1_1dprivate_1_1base__timer__watcher.html" title=" " alt="" coords="218,416,381,456"/>
+<area shape="poly" id="edge37_Node000000_Node000015" title=" " alt="" coords="105,286,149,345,177,375,210,402,231,414,228,418,206,406,174,379,145,348,101,289"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1v2_1_1dprivate_1_1child__proc__watcher.html" title=" " alt="" coords="475,13,629,67"/>
+<area shape="poly" id="edge24_Node000001_Node000002" title=" " alt="" coords="405,37,475,37,475,43,405,43"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1v2_1_1dprivate_1_1child__proc__watcher__impl.html" title=" " alt="" coords="721,13,936,67"/>
+<area shape="poly" id="edge25_Node000002_Node000003" title=" " alt="" coords="643,37,721,37,721,43,643,43"/>
+<area shape="rect" id="Node000005" href="$classdasynq_1_1v2_1_1dprivate_1_1signal__watcher.html" title=" " alt="" coords="439,113,665,153"/>
+<area shape="poly" id="edge27_Node000004_Node000005" title=" " alt="" coords="404,131,438,131,438,136,404,136"/>
+<area shape="rect" id="Node000006" href="$classdasynq_1_1v2_1_1dprivate_1_1signal__watcher__impl.html" title=" " alt="" coords="739,106,918,161"/>
+<area shape="poly" id="edge28_Node000005_Node000006" title=" " alt="" coords="679,131,739,131,739,136,679,136"/>
+<area shape="rect" id="Node000009" href="$classdasynq_1_1v2_1_1dprivate_1_1base__bidi__fd__watcher.html" title=" " alt="" coords="467,240,637,280"/>
+<area shape="poly" id="edge31_Node000008_Node000009" title=" " alt="" coords="390,278,466,268,467,273,391,283"/>
+<area shape="rect" id="Node000012" href="$classdasynq_1_1v2_1_1dprivate_1_1fd__watcher.html" title=" " alt="" coords="452,304,652,344"/>
+<area shape="poly" id="edge34_Node000008_Node000012" title=" " alt="" coords="391,301,452,309,452,314,390,306"/>
+<area shape="rect" id="Node000010" href="$classdasynq_1_1v2_1_1dprivate_1_1bidi__fd__watcher.html" title=" " alt="" coords="713,236,944,276"/>
+<area shape="poly" id="edge32_Node000009_Node000010" title=" " alt="" coords="651,256,713,255,713,260,651,261"/>
+<area shape="rect" id="Node000011" href="$classdasynq_1_1v2_1_1dprivate_1_1bidi__fd__watcher__impl.html" title=" " alt="" coords="992,229,1171,283"/>
+<area shape="poly" id="edge33_Node000010_Node000011" title=" " alt="" coords="958,253,992,253,992,259,958,259"/>
+<area shape="rect" id="Node000013" href="$classdasynq_1_1v2_1_1dprivate_1_1fd__watcher__impl.html" title=" " alt="" coords="716,301,941,355"/>
+<area shape="poly" id="edge35_Node000012_Node000013" title=" " alt="" coords="666,323,716,324,716,329,666,328"/>
+<area shape="rect" id="Node000016" href="$classdasynq_1_1v2_1_1dprivate_1_1timer.html" title=" " alt="" coords="471,416,633,456"/>
+<area shape="poly" id="edge38_Node000015_Node000016" title=" " alt="" coords="394,433,471,433,471,439,394,439"/>
+<area shape="rect" id="Node000017" href="$classdasynq_1_1v2_1_1dprivate_1_1timer__impl.html" title=" " alt="" coords="735,409,923,463"/>
+<area shape="poly" id="edge39_Node000016_Node000017" title=" " alt="" coords="647,433,734,433,734,439,647,439"/>
+</map>

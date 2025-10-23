@@ -1,0 +1,7 @@
+<map id="spdlog::details::log_msg_buffer" name="spdlog::details::log_msg_buffer">
+<area shape="rect" id="Node000001" title=" " alt="" coords="32,79,177,119"/>
+<area shape="rect" id="Node000003" href="$structspdlog_1_1details_1_1async__msg.html" title=" " alt="" coords="5,167,204,192"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="107,132,107,166,102,166,102,132"/>
+<area shape="rect" id="Node000002" href="$structspdlog_1_1details_1_1log__msg.html" title=" " alt="" coords="15,5,195,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,44,107,79,102,79,102,44"/>
+</map>

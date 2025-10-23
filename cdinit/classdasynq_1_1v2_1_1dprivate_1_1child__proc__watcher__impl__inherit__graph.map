@@ -1,0 +1,12 @@
+<map id="dasynq::v2::dprivate::child_proc_watcher_impl&lt; EventLoop, Derived &gt;" name="dasynq::v2::dprivate::child_proc_watcher_impl&lt; EventLoop, Derived &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="1017,13,1232,67"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1v2_1_1dprivate_1_1child__proc__watcher.html" title=" " alt="" coords="813,13,968,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="982,37,1017,37,1017,43,982,43"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1v2_1_1dprivate_1_1base__child__watcher.html" title=" " alt="" coords="581,5,764,75"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="778,37,813,37,813,43,778,43"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1v2_1_1dprivate_1_1base__watcher.html" title=" " alt="" coords="5,24,160,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="174,34,351,26,455,24,557,27,581,28,581,33,557,32,454,30,351,31,174,40"/>
+<area shape="rect" id="Node000005" href="$classdasynq_1_1v2_1_1dprivate_1_1base__child__watcher.html" title=" " alt="" coords="209,49,368,103"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="174,55,210,61,209,66,173,61"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="382,70,557,56,581,53,582,58,558,61,382,75"/>
+</map>

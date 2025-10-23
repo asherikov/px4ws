@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['r_0',['r',['../structrgb.html#afd9a3feaf22de2f96ba25d19494235a6',1,'rgb']]],
+  ['rank_5fv_1',['rank_v',['http://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',1,'std::experimental::rank_v'],['http://en.cppreference.com/w/cpp/types/rank.html',1,'std::rank_v']]],
+  ['ratio_5fequal_5fv_2',['ratio_equal_v',['http://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',1,'std::experimental::ratio_equal_v'],['http://en.cppreference.com/w/cpp/numeric/ratio/ratio_equal.html',1,'std::ratio_equal_v']]],
+  ['ratio_5fgreater_5fequal_5fv_3',['ratio_greater_equal_v',['http://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',1,'std::experimental::ratio_greater_equal_v'],['http://en.cppreference.com/w/cpp/numeric/ratio/ratio_greater_equal.html',1,'std::ratio_greater_equal_v']]],
+  ['ratio_5fgreater_5fv_4',['ratio_greater_v',['http://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',1,'std::experimental::ratio_greater_v'],['http://en.cppreference.com/w/cpp/numeric/ratio/ratio_greater.html',1,'std::ratio_greater_v']]],
+  ['ratio_5fless_5fequal_5fv_5',['ratio_less_equal_v',['http://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',1,'std::experimental::ratio_less_equal_v'],['http://en.cppreference.com/w/cpp/numeric/ratio/ratio_less_equal.html',1,'std::ratio_less_equal_v']]],
+  ['ratio_5fless_5fv_6',['ratio_less_v',['http://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',1,'std::experimental::ratio_less_v'],['http://en.cppreference.com/w/cpp/numeric/ratio/ratio_less.html',1,'std::ratio_less_v']]],
+  ['ratio_5fnot_5fequal_5fv_7',['ratio_not_equal_v',['http://en.cppreference.com/w/cpp/numeric/ratio/ratio_not_equal.html',1,'std::ratio_not_equal_v'],['http://en.cppreference.com/w/cpp/experimental/type_trait_variable_templates.html',1,'std::experimental::ratio_not_equal_v']]],
+  ['red_8',['red',['../classspdlog_1_1sinks_1_1ansicolor__sink.html#a3dcfa23f4d21369acdcc86e0254b8aae',1,'spdlog::sinks::ansicolor_sink']]],
+  ['red_5fbold_9',['red_bold',['../classspdlog_1_1sinks_1_1ansicolor__sink.html#a3d6b40a04c0ab0629ef2a84377fc768e',1,'spdlog::sinks::ansicolor_sink']]],
+  ['reg_10',['reg',['../namespaceextract__version.html#a03f9baa5f4595b2661f9d0f196fa206a',1,'extract_version']]],
+  ['rem_11',['rem',['http://en.cppreference.com/w/cpp/numeric/math/div.html',1,'std::lldiv_t::rem'],['http://en.cppreference.com/w/cpp/numeric/math/div.html',1,'std::ldiv_t::rem'],['http://en.cppreference.com/w/cpp/numeric/math/div.html',1,'std::imaxdiv_t::rem'],['http://en.cppreference.com/w/cpp/numeric/math/div.html',1,'std::div_t::rem']]],
+  ['remaining_5fpad_5f_12',['remaining_pad_',['../classspdlog_1_1details_1_1scoped__padder.html#aa5ab8b36fde70b07f10f1c4a0e6ba9e2',1,'spdlog::details::scoped_padder']]],
+  ['reset_13',['reset',['../classspdlog_1_1sinks_1_1ansicolor__sink.html#ad399583fde29a6ab3b90beb8bcdddbb7',1,'spdlog::sinks::ansicolor_sink']]],
+  ['resultdisposition_14',['resultDisposition',['../structCatch_1_1AssertionInfo.html#a60353b3632ab2f827162f2b2d6911073',1,'Catch::AssertionInfo']]],
+  ['reverse_15',['reverse',['../classspdlog_1_1sinks_1_1ansicolor__sink.html#a5da14703e326c64d1553ffff8985cf4e',1,'spdlog::sinks::ansicolor_sink']]],
+  ['rgb_5fcolor_16',['rgb_color',['../unioncolor__type_1_1color__union.html#a84de6ad738e7559ada9b726f96768391',1,'color_type::color_union']]],
+  ['right_5fpadding_5fshifts_17',['right_padding_shifts',['../structbasic__data.html#ab309635873089a43982492728148b4dd',1,'basic_data']]],
+  ['rotating_5ffiles_18',['rotating_files',['../bench_8cpp.html#a1956604f95f0dd9266cc5e85a33bf565',1,'bench.cpp']]],
+  ['rotation_5fh_5f_19',['rotation_h_',['../classspdlog_1_1sinks_1_1daily__file__sink.html#aa6d65d26e570cf05ac6348ec1f4db65f',1,'spdlog::sinks::daily_file_sink']]],
+  ['rotation_5fm_5f_20',['rotation_m_',['../classspdlog_1_1sinks_1_1daily__file__sink.html#aad42053bec2ecb762fc147e0388fcb28',1,'spdlog::sinks::daily_file_sink']]],
+  ['rotation_5ftp_5f_21',['rotation_tp_',['../classspdlog_1_1sinks_1_1hourly__file__sink.html#a10b0409577769966cb64c232f5fc18d5',1,'spdlog::sinks::hourly_file_sink::rotation_tp_'],['../classspdlog_1_1sinks_1_1daily__file__sink.html#a94541bc336aeb037ed85b6046c5f809e',1,'spdlog::sinks::daily_file_sink::rotation_tp_']]]
+];

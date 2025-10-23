@@ -1,0 +1,15 @@
+<map id="dasynq::v2::dprivate::base_fd_watcher" name="dasynq::v2::dprivate::base_fd_watcher">
+<area shape="rect" id="Node000001" title=" " alt="" coords="208,49,363,89"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1v2_1_1dprivate_1_1base__bidi__fd__watcher.html" title=" " alt="" coords="425,15,596,55"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="376,53,425,45,426,51,377,58"/>
+<area shape="rect" id="Node000006" href="$classdasynq_1_1v2_1_1dprivate_1_1fd__watcher.html" title=" " alt="" coords="411,81,611,121"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="377,79,411,84,410,89,376,84"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1v2_1_1dprivate_1_1base__watcher.html" title=" " alt="" coords="5,49,160,89"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,66,207,66,207,71,174,71"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1v2_1_1dprivate_1_1bidi__fd__watcher.html" title=" " alt="" coords="659,13,889,53"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="610,32,658,31,658,37,610,37"/>
+<area shape="rect" id="Node000005" href="$classdasynq_1_1v2_1_1dprivate_1_1bidi__fd__watcher__impl.html" title=" " alt="" coords="937,5,1116,60"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="903,30,937,30,937,35,903,35"/>
+<area shape="rect" id="Node000007" href="$classdasynq_1_1v2_1_1dprivate_1_1fd__watcher__impl.html" title=" " alt="" coords="661,77,887,132"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="625,100,661,100,661,106,624,105"/>
+</map>

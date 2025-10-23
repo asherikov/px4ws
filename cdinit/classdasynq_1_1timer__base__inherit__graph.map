@@ -1,0 +1,11 @@
+<map id="dasynq::timer_base&lt; Base &gt;" name="dasynq::timer_base&lt; Base &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="108,91,259,131"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1itimer__events.html" title=" " alt="" coords="313,5,483,60"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,84,322,58,324,63,253,89"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1posix__timer__events.html" title=" " alt="" coords="309,84,487,139"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="272,109,309,109,309,114,272,114"/>
+<area shape="rect" id="Node000005" href="$classdasynq_1_1timer__fd__events.html" title=" " alt="" coords="307,163,489,203"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="257,133,338,161,337,166,256,138"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,99,60,124"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="74,109,108,109,108,114,74,114"/>
+</map>

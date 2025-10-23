@@ -1,0 +1,11 @@
+<map id="dasynq::v2::dprivate::bidi_fd_watcher_impl&lt; EventLoop, Derived &gt;" name="dasynq::v2::dprivate::bidi_fd_watcher_impl&lt; EventLoop, Derived &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="31,357,210,412"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1v2_1_1dprivate_1_1bidi__fd__watcher.html" title=" " alt="" coords="5,269,236,309"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="123,323,123,357,118,357,118,323"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1v2_1_1dprivate_1_1base__bidi__fd__watcher.html" title=" " alt="" coords="35,181,206,221"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,235,123,269,118,269,118,235"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1v2_1_1dprivate_1_1base__fd__watcher.html" title=" " alt="" coords="43,93,198,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="123,147,123,181,118,181,118,147"/>
+<area shape="rect" id="Node000005" href="$classdasynq_1_1v2_1_1dprivate_1_1base__watcher.html" title=" " alt="" coords="43,5,198,45"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="123,59,123,93,118,93,118,59"/>
+</map>

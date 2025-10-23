@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['dasynq_5fempty_5fbody_0',['DASYNQ_EMPTY_BODY',['../classdasynq_1_1null__mutex.html#a4b10aa9e883142f7a2e69c6e5c79c921',1,'dasynq::null_mutex']]],
+  ['data_1',['data',['../uniondasynq_1_1btree__set_1_1heapnode_1_1nodedata__u.html#abb4f6cc52af8ce7008ba2130616cbe8c',1,'dasynq::btree_set::heapnode::nodedata_u']]],
+  ['deleteme_2',['deleteme',['../classdasynq_1_1v2_1_1dprivate_1_1base__watcher.html#a84c87b7f3e38dd432911847d1135fed6',1,'dasynq::v2::dprivate::base_watcher']]],
+  ['dep_5ftype_3',['dep_type',['../classprelim__dep.html#a5ecd81e194449fc116c0e4c37b18c679',1,'prelim_dep::dep_type'],['../classservice__dep.html#abdbdb7f763df65421be568f80dd18785',1,'service_dep::dep_type'],['../classprelim__dep.html#a215e45e60b3b36dda1397a50051e2684',1,'prelim_dep::dep_type']]],
+  ['dependencies_4',['dependencies',['../classservice__record.html#a89b0f0a8277994130efd2a12bb562019',1,'service_record']]],
+  ['dependents_5',['dependents',['../classservice__record.html#af2d7e09f5c52733c05896d7c4f7ddbeb',1,'service_record']]],
+  ['depends_6',['depends',['../classdinit__load_1_1service__settings__wrapper.html#a34cb56c16944855e6d99606a0b07968b',1,'dinit_load::service_settings_wrapper']]],
+  ['depends_5fon_7',['depends_on',['../classservice__record.html#aff732640c45ea6e4be8b8f37918a5327',1,'service_record']]],
+  ['dept_5fpinned_5fstarted_8',['dept_pinned_started',['../classservice__record.html#abc4a7e1a3cee06d0b819cb5932755af2',1,'service_record']]],
+  ['desired_5fstate_9',['desired_state',['../classservice__record.html#ad2771577f13fc4ca6af279ba108d2701',1,'service_record']]],
+  ['did_5flog_5fboot_10',['did_log_boot',['../dinit_8cc.html#a60b84491b5f3f40bfab91b19fa933b2e',1,'dinit.cc']]],
+  ['dir_11',['dir',['../classdir__entry.html#ad8dc996e098d53f22806275bce7568d2',1,'dir_entry']]],
+  ['dir_5fdyn_5fallocd_12',['dir_dyn_allocd',['../classdir__entry.html#abf4103ecf9c21c648b119e51016b74a9',1,'dir_entry']]],
+  ['disjunction_5fv_13',['disjunction_v',['http://en.cppreference.com/w/cpp/types/disjunction.html',1,'std']]],
+  ['dlog_5fcons_14',['DLOG_CONS',['../dinit-log_8h.html#ad2cd38738329d762792952cd0c61fd2a',1,'dinit-log.h']]],
+  ['dlog_5fmain_15',['DLOG_MAIN',['../dinit-log_8h.html#a4541b9337cb355aefc03e54ae3316f39',1,'dinit-log.h']]],
+  ['dlog_5fnum_16',['DLOG_NUM',['../dinit-log_8h.html#a1e95dffda7fba972ff2db72ea830e724',1,'dinit-log.h']]],
+  ['doing_5fsmooth_5frecovery_17',['doing_smooth_recovery',['../classprocess__service.html#a573d3dcaa99f6fe7beed3035b699a2dd',1,'process_service']]]
+];

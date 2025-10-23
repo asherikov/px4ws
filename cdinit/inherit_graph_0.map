@@ -1,0 +1,33 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,269,60,294"/>
+<area shape="rect" id="Node000001" href="$classdasynq_1_1signal__events.html" title=" " alt="" coords="120,5,287,45"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="33,254,38,211,50,158,72,104,87,78,106,55,122,43,125,48,110,59,92,81,77,106,55,160,43,212,38,255"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1signal__events.html" title=" " alt="" coords="120,69,287,109"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="37,254,59,188,79,151,106,119,124,107,127,112,110,123,84,154,64,190,42,256"/>
+<area shape="rect" id="Node000006" href="$classdasynq_1_1interrupt__channel.html" title=" " alt="" coords="108,133,299,173"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="46,255,71,218,106,183,127,171,130,176,110,187,75,221,50,258"/>
+<area shape="rect" id="Node000007" href="$classdasynq_1_1interrupt__channel_3_01Base_00_01null__mutex_01_4.html" title=" " alt="" coords="108,197,299,237"/>
+<area shape="poly" id="edge7_Node000000_Node000007" title=" " alt="" coords="71,262,107,247,140,235,141,240,109,252,73,266"/>
+<area shape="rect" id="Node000008" href="$classdasynq_1_1signal__events.html" title=" " alt="" coords="110,261,297,301"/>
+<area shape="poly" id="edge8_Node000000_Node000008" title=" " alt="" coords="74,279,110,279,110,284,74,284"/>
+<area shape="rect" id="Node000009" href="$classdasynq_1_1timer__base.html" title=" " alt="" coords="128,325,279,365"/>
+<area shape="poly" id="edge9_Node000000_Node000009" title=" " alt="" coords="73,296,109,311,141,323,140,328,107,316,71,301"/>
+<area shape="rect" id="Node000013" href="$classdasynq_1_1v2_1_1child__proc__events.html" title=" " alt="" coords="120,389,287,429"/>
+<area shape="poly" id="edge13_Node000000_Node000013" title=" " alt="" coords="50,305,75,341,110,375,130,387,127,391,106,379,71,345,46,308"/>
+<area shape="rect" id="Node000014" href="$classdasynq_1_1v2_1_1epoll__loop.html" title=" " alt="" coords="119,453,287,493"/>
+<area shape="poly" id="edge14_Node000000_Node000014" title=" " alt="" coords="42,307,64,373,84,409,110,439,127,451,124,455,106,443,79,412,59,375,37,308"/>
+<area shape="rect" id="Node000015" href="$classdasynq_1_1v2_1_1kqueue__loop.html" title=" " alt="" coords="129,517,278,557"/>
+<area shape="poly" id="edge15_Node000000_Node000015" title=" " alt="" coords="38,308,43,351,55,403,77,457,92,481,110,503,130,518,127,522,106,507,87,485,72,459,50,404,38,351,33,309"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1pselect__events.html" title=" " alt="" coords="359,5,533,45"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="301,23,358,23,358,28,301,28"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1select__events.html" title=" " alt="" coords="363,69,529,109"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="300,87,363,87,363,92,300,92"/>
+<area shape="rect" id="Node000005" href="$classdasynq_1_1v2_1_1macos__kqueue__loop.html" title=" " alt="" coords="347,133,545,173"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="294,110,370,131,369,136,292,115"/>
+<area shape="rect" id="Node000010" href="$classdasynq_1_1itimer__events.html" title=" " alt="" coords="361,239,531,294"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="278,319,360,292,362,297,280,324"/>
+<area shape="rect" id="Node000011" href="$classdasynq_1_1posix__timer__events.html" title=" " alt="" coords="357,318,535,373"/>
+<area shape="poly" id="edge11_Node000009_Node000011" title=" " alt="" coords="293,343,357,343,357,348,293,348"/>
+<area shape="rect" id="Node000012" href="$classdasynq_1_1timer__fd__events.html" title=" " alt="" coords="355,397,537,437"/>
+<area shape="poly" id="edge12_Node000009_Node000012" title=" " alt="" coords="285,367,379,395,377,400,284,372"/>
+</map>

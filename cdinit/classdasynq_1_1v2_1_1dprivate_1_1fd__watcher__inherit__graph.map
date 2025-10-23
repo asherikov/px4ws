@@ -1,0 +1,9 @@
+<map id="dasynq::v2::dprivate::fd_watcher&lt; EventLoop &gt;" name="dasynq::v2::dprivate::fd_watcher&lt; EventLoop &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="18,181,218,221"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1v2_1_1dprivate_1_1fd__watcher__impl.html" title=" " alt="" coords="5,269,231,324"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="121,235,121,269,115,269,115,235"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1v2_1_1dprivate_1_1base__fd__watcher.html" title=" " alt="" coords="41,93,195,133"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,147,121,181,115,181,115,147"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1v2_1_1dprivate_1_1base__watcher.html" title=" " alt="" coords="41,5,195,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="121,59,121,93,115,93,115,59"/>
+</map>

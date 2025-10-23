@@ -1,0 +1,12 @@
+<map id="dasynq::v2::dprivate::signal_watcher&lt; EventLoop &gt;" name="dasynq::v2::dprivate::signal_watcher&lt; EventLoop &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="821,20,1048,60"/>
+<area shape="rect" id="Node000005" href="$classdasynq_1_1v2_1_1dprivate_1_1signal__watcher__impl.html" title=" " alt="" coords="1097,13,1276,67"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="1062,37,1097,37,1097,43,1062,43"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1v2_1_1dprivate_1_1base__signal__watcher.html" title=" " alt="" coords="589,5,772,75"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="786,37,821,37,821,43,786,43"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1v2_1_1dprivate_1_1base__watcher.html" title=" " alt="" coords="5,24,160,64"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="174,34,355,26,460,24,565,27,589,28,589,33,565,32,460,30,355,31,174,40"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1v2_1_1dprivate_1_1base__signal__watcher.html" title=" " alt="" coords="209,49,376,103"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="174,55,209,61,209,66,173,60"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="390,70,565,56,589,53,590,58,566,61,390,75"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="Catch::Generators::ChunkGenerator&lt; T &gt;" name="Catch::Generators::ChunkGenerator&lt; T &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="15,301,181,341"/>
+<area shape="rect" id="Node000002" href="$structCatch_1_1Generators_1_1IGenerator.html" title=" " alt="" coords="11,197,185,252"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,266,101,301,95,301,95,266"/>
+<area shape="rect" id="Node000003" href="$classCatch_1_1Generators_1_1GeneratorUntypedBase.html" title=" " alt="" coords="5,5,180,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="96,59,100,197,95,197,91,59"/>
+<area shape="rect" id="Node000004" href="$structCatch_1_1Generators_1_1IGenerator.html" title=" " alt="" coords="114,95,261,135"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="125,53,169,93,165,97,121,57"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="165,147,122,199,118,196,161,144"/>
+</map>

@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['scoped_5fallocator_0',['scoped_allocator',['http://en.cppreference.com/w/cpp/header/scoped_allocator.html',1,'']]],
+  ['select_2eh_1',['select.h',['../select_8h.html',1,'']]],
+  ['service_2dconstants_2eh_2',['service-constants.h',['../service-constants_8h.html',1,'']]],
+  ['service_2ddir_2eh_3',['service-dir.h',['../service-dir_8h.html',1,'']]],
+  ['service_2dlistener_2eh_4',['service-listener.h',['../service-listener_8h.html',1,'']]],
+  ['service_2ecc_5',['service.cc',['../service_8cc.html',1,'']]],
+  ['service_2eh_6',['service.h',['../service_8h.html',1,'']]],
+  ['set_7',['set',['http://en.cppreference.com/w/cpp/header/set.html',1,'']]],
+  ['settings_2ecc_8',['settings.cc',['../settings_8cc.html',1,'']]],
+  ['shared_5fmutex_9',['shared_mutex',['http://en.cppreference.com/w/cpp/header/shared_mutex.html',1,'']]],
+  ['shutdown_2ecc_10',['shutdown.cc',['../shutdown_8cc.html',1,'']]],
+  ['signal_2eh_11',['signal.h',['../signal_8h.html',1,'']]],
+  ['span_12',['span',['http://en.cppreference.com/w/cpp/header/span.html',1,'']]],
+  ['sstream_13',['sstream',['http://en.cppreference.com/w/cpp/header/sstream.html',1,'']]],
+  ['stableheap_2eh_14',['stableheap.h',['../stableheap_8h.html',1,'']]],
+  ['stack_15',['stack',['http://en.cppreference.com/w/cpp/header/stack.html',1,'']]],
+  ['static_2dstring_2eh_16',['static-string.h',['../static-string_8h.html',1,'']]],
+  ['stdexcept_17',['stdexcept',['http://en.cppreference.com/w/cpp/header/stdexcept.html',1,'']]],
+  ['streambuf_18',['streambuf',['http://en.cppreference.com/w/cpp/header/streambuf.html',1,'']]],
+  ['string_19',['string',['http://en.cppreference.com/w/cpp/header/string.html',1,'']]],
+  ['string_5fview_20',['string_view',['http://en.cppreference.com/w/cpp/header/string_view.html',1,'']]],
+  ['strstream_21',['strstream',['http://en.cppreference.com/w/cpp/header/strstream.html',1,'']]],
+  ['svec_2eh_22',['svec.h',['../svec_8h.html',1,'']]],
+  ['syncstream_23',['syncstream',['http://en.cppreference.com/w/cpp/header/syncstream.html',1,'']]],
+  ['system_5ferror_24',['system_error',['http://en.cppreference.com/w/cpp/header/system_error.html',1,'']]]
+];

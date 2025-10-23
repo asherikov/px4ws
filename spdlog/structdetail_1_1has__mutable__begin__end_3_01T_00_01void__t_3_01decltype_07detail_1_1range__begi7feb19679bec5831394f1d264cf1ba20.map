@@ -1,0 +1,5 @@
+<map id="detail::has_mutable_begin_end&lt; T, void_t&lt; decltype(detail::range_begin(std::declval&lt; T &gt;())), decltype(detail::range_begin(std::declval&lt; T &gt;())), enable_if_t&lt; std::is_copy_constructible&lt; T &gt;::value &gt; &gt; &gt;" name="detail::has_mutable_begin_end&lt; T, void_t&lt; decltype(detail::range_begin(std::declval&lt; T &gt;())), decltype(detail::range_begin(std::declval&lt; T &gt;())), enable_if_t&lt; std::is_copy_constructible&lt; T &gt;::value &gt; &gt; &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,79,213,221"/>
+<area shape="rect" id="Node000002" href="/ccws/ccws/profiles/build/doxygen/cppreference-doxygen-web.tag.xml$cpp/types/integral_constant.html" title=" " alt="" coords="53,5,165,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,44,112,78,107,78,107,44"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="dasynq::select_events&lt; Base &gt;" name="dasynq::select_events&lt; Base &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,272,172,312"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1signal__events.html" title=" " alt="" coords="5,183,172,223"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,237,91,272,86,272,86,237"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="56,5,111,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="87,44,91,183,85,183,81,45"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1signal__events.html" title=" " alt="" coords="105,80,291,120"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="112,36,172,78,169,82,109,41"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="169,132,111,185,107,181,165,128"/>
+</map>

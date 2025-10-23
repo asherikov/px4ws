@@ -1,0 +1,11 @@
+<map id="dasynq::v2::dprivate::base_child_watcher&lt; ChildData &gt;" name="dasynq::v2::dprivate::base_child_watcher&lt; ChildData &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="209,13,368,67"/>
+<area shape="rect" id="Node000003" href="$classdasynq_1_1v2_1_1dprivate_1_1base__child__watcher.html" title=" " alt="" coords="581,5,764,75"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="381,37,581,37,581,43,381,43"/>
+<area shape="rect" id="Node000002" href="$classdasynq_1_1v2_1_1dprivate_1_1base__watcher.html" title=" " alt="" coords="5,20,160,60"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="174,37,209,37,209,43,174,43"/>
+<area shape="rect" id="Node000004" href="$classdasynq_1_1v2_1_1dprivate_1_1child__proc__watcher.html" title=" " alt="" coords="813,13,968,67"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="778,37,813,37,813,43,778,43"/>
+<area shape="rect" id="Node000005" href="$classdasynq_1_1v2_1_1dprivate_1_1child__proc__watcher__impl.html" title=" " alt="" coords="1017,13,1232,67"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="982,37,1017,37,1017,43,982,43"/>
+</map>

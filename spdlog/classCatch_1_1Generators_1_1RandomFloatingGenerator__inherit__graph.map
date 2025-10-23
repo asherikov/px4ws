@@ -1,0 +1,10 @@
+<map id="Catch::Generators::RandomFloatingGenerator&lt; Float &gt;" name="Catch::Generators::RandomFloatingGenerator&lt; Float &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,287,200,341"/>
+<area shape="rect" id="Node000002" href="$structCatch_1_1Generators_1_1IGenerator.html" title=" " alt="" coords="25,197,180,237"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="105,251,105,287,100,287,100,251"/>
+<area shape="rect" id="Node000003" href="$classCatch_1_1Generators_1_1GeneratorUntypedBase.html" title=" " alt="" coords="10,5,185,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="101,59,105,197,99,197,96,59"/>
+<area shape="rect" id="Node000004" href="$structCatch_1_1Generators_1_1IGenerator.html" title=" " alt="" coords="119,95,265,135"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="130,53,173,93,170,97,126,57"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="168,147,121,199,117,195,164,143"/>
+</map>

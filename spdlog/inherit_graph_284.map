@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="/ccws/ccws/profiles/build/doxygen/cppreference-doxygen-web.tag.xml$cpp/error/exception.html" title=" " alt="" coords="5,31,120,56"/>
+<area shape="rect" id="Node000001" href="$classCatch_1_1GeneratorException.html" title=" " alt="" coords="168,5,364,31"/>
+<area shape="poly" id="edge167_Node000000_Node000001" title=" " alt="" coords="134,32,167,28,168,33,134,37"/>
+<area shape="rect" id="Node000002" href="$classspdlog_1_1spdlog__ex.html" title=" " alt="" coords="197,55,335,80"/>
+<area shape="poly" id="edge168_Node000000_Node000002" title=" " alt="" coords="134,49,197,57,196,62,134,54"/>
+<area shape="rect" id="Node000003" href="$structspdlog_1_1sinks_1_1win__eventlog_1_1internal_1_1win32__error.html" title=" " alt="" coords="412,40,556,95"/>
+<area shape="poly" id="edge169_Node000002_Node000003" title=" " alt="" coords="349,65,412,65,412,70,349,70"/>
+</map>

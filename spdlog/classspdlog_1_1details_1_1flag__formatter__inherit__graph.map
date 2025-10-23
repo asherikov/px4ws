@@ -1,0 +1,89 @@
+<map id="spdlog::details::flag_formatter" name="spdlog::details::flag_formatter">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,1302,155,1342"/>
+<area shape="rect" id="Node000002" href="$classspdlog_1_1custom__flag__formatter.html" title=" " alt="" coords="269,22,421,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="80,1288,89,1031,111,644,127,449,147,276,171,145,185,100,201,72,215,60,232,50,268,40,269,45,234,55,218,64,205,76,190,102,177,146,152,277,132,449,116,645,95,1031,85,1288"/>
+<area shape="rect" id="Node000005" href="$classspdlog_1_1details_1_1A__formatter.html" title=" " alt="" coords="239,86,451,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="80,1288,90,1043,113,677,129,492,149,329,173,205,186,162,201,136,218,122,237,112,240,117,221,126,205,140,191,165,178,206,154,330,135,493,118,678,96,1044,85,1288"/>
+<area shape="rect" id="Node000006" href="$classspdlog_1_1details_1_1B__formatter.html" title=" " alt="" coords="239,150,451,190"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="80,1288,91,1055,115,710,131,535,151,382,174,265,187,225,201,200,218,186,237,176,240,181,221,190,205,204,192,227,179,266,156,382,137,536,120,710,97,1056,85,1289"/>
+<area shape="rect" id="Node000007" href="$classspdlog_1_1details_1_1C__formatter.html" title=" " alt="" coords="239,214,451,254"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="80,1288,93,1067,117,742,134,578,153,434,175,325,187,287,201,264,218,250,237,240,240,245,221,254,205,268,192,290,180,326,158,435,139,579,122,742,98,1067,86,1288"/>
+<area shape="rect" id="Node000008" href="$classspdlog_1_1details_1_1D__formatter.html" title=" " alt="" coords="239,278,451,318"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="81,1288,94,1079,119,774,136,621,155,487,176,385,188,350,201,328,218,314,237,304,240,309,221,318,205,332,193,352,182,386,160,488,141,622,124,775,99,1079,86,1288"/>
+<area shape="rect" id="Node000009" href="$classspdlog_1_1details_1_1E__formatter.html" title=" " alt="" coords="239,342,451,382"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="78,1288,79,1104,84,975,93,835,107,696,129,569,143,513,160,464,179,423,201,392,218,378,237,368,240,373,221,382,205,396,183,426,165,466,148,514,134,570,112,697,98,836,89,975,85,1104,83,1289"/>
+<area shape="rect" id="Node000010" href="$classspdlog_1_1details_1_1F__formatter.html" title=" " alt="" coords="239,406,451,446"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="78,1288,81,1115,87,995,96,865,111,737,133,619,147,568,162,522,180,485,201,456,218,442,237,432,240,437,221,447,205,460,185,488,167,524,152,569,138,620,117,738,102,866,92,995,87,1115,84,1288"/>
+<area shape="rect" id="Node000011" href="$classspdlog_1_1details_1_1H__formatter.html" title=" " alt="" coords="239,470,451,510"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="79,1288,84,1127,100,896,116,778,137,670,165,581,182,546,201,520,218,506,237,496,240,501,221,511,205,524,186,549,170,583,142,671,121,779,106,897,89,1127,84,1288"/>
+<area shape="rect" id="Node000012" href="$classspdlog_1_1details_1_1I__formatter.html" title=" " alt="" coords="239,534,451,574"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="79,1288,86,1138,104,927,120,819,141,720,167,640,183,608,201,584,218,570,237,561,240,565,221,575,205,588,188,611,172,642,146,722,125,820,110,927,91,1138,85,1288"/>
+<area shape="rect" id="Node000013" href="$classspdlog_1_1details_1_1M__formatter.html" title=" " alt="" coords="239,598,451,638"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="80,1288,88,1150,109,958,124,860,144,771,170,698,184,670,201,648,218,634,237,625,240,630,221,639,205,652,189,673,175,700,150,773,129,861,114,959,94,1150,85,1289"/>
+<area shape="rect" id="Node000014" href="$classspdlog_1_1details_1_1R__formatter.html" title=" " alt="" coords="239,662,451,702"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="81,1288,91,1161,113,989,129,901,148,822,172,757,186,731,201,712,218,699,237,689,240,694,221,703,205,716,190,734,177,759,153,823,134,902,118,990,96,1162,86,1288"/>
+<area shape="rect" id="Node000015" href="$classspdlog_1_1details_1_1S__formatter.html" title=" " alt="" coords="239,726,451,766"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="82,1288,94,1173,117,1020,133,943,152,873,175,815,201,776,218,763,237,753,240,758,221,767,205,780,179,818,157,874,138,944,122,1021,99,1174,87,1288"/>
+<area shape="rect" id="Node000016" href="$classspdlog_1_1details_1_1T__formatter.html" title=" " alt="" coords="239,790,451,830"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="83,1288,97,1185,122,1051,138,984,156,924,177,874,201,840,218,827,237,818,240,822,221,831,205,844,182,877,161,925,143,986,127,1052,102,1186,88,1289"/>
+<area shape="rect" id="Node000017" href="$classspdlog_1_1details_1_1Y__formatter.html" title=" " alt="" coords="239,854,451,894"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="78,1288,81,1209,87,1159,97,1106,113,1051,135,997,163,948,201,904,218,891,237,882,240,887,221,896,204,908,168,951,139,1000,118,1053,103,1107,93,1160,87,1210,83,1288"/>
+<area shape="rect" id="Node000018" href="$classspdlog_1_1details_1_1a__formatter.html" title=" " alt="" coords="239,918,451,958"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="80,1288,87,1220,106,1134,122,1088,142,1044,168,1004,201,968,218,956,237,947,239,952,221,960,204,972,173,1007,147,1047,127,1090,111,1135,93,1221,85,1288"/>
+<area shape="rect" id="Node000019" href="$classspdlog_1_1details_1_1aggregate__formatter.html" title=" " alt="" coords="249,982,440,1022"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="83,1288,94,1232,115,1163,131,1127,150,1092,173,1060,201,1032,223,1018,248,1008,250,1013,226,1022,204,1036,177,1063,154,1095,136,1129,120,1164,99,1233,88,1289"/>
+<area shape="rect" id="Node000020" href="$classspdlog_1_1details_1_1b__formatter.html" title=" " alt="" coords="239,1046,451,1086"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="87,1288,102,1244,125,1192,158,1140,178,1116,201,1096,237,1077,240,1082,204,1100,182,1120,162,1143,130,1194,107,1246,92,1289"/>
+<area shape="rect" id="Node000021" href="$classspdlog_1_1details_1_1c__formatter.html" title=" " alt="" coords="239,1110,451,1150"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="95,1288,137,1222,166,1188,201,1160,237,1143,240,1148,204,1164,170,1192,141,1226,99,1291"/>
+<area shape="rect" id="Node000022" href="$classspdlog_1_1details_1_1ch__formatter.html" title=" " alt="" coords="275,1174,415,1214"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="109,1290,151,1255,201,1224,237,1210,274,1201,275,1206,239,1215,204,1228,154,1260,112,1295"/>
+<area shape="rect" id="Node000023" href="$classspdlog_1_1details_1_1color__start__formatter.html" title=" " alt="" coords="266,1238,423,1278"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="167,1296,202,1287,265,1273,266,1278,203,1293,169,1301"/>
+<area shape="rect" id="Node000024" href="$classspdlog_1_1details_1_1color__stop__formatter.html" title=" " alt="" coords="266,1302,423,1342"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="169,1319,266,1319,266,1325,169,1325"/>
+<area shape="rect" id="Node000025" href="$classspdlog_1_1details_1_1d__formatter.html" title=" " alt="" coords="239,1366,451,1406"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="169,1343,203,1351,254,1363,253,1369,202,1357,167,1348"/>
+<area shape="rect" id="Node000026" href="$classspdlog_1_1details_1_1e__formatter.html" title=" " alt="" coords="239,1430,451,1470"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="112,1349,154,1384,204,1416,240,1429,238,1434,201,1420,151,1389,109,1354"/>
+<area shape="rect" id="Node000027" href="$classspdlog_1_1details_1_1elapsed__formatter.html" title=" " alt="" coords="244,1495,445,1549"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="100,1352,141,1418,170,1451,204,1480,245,1500,243,1505,201,1484,167,1455,137,1421,95,1355"/>
+<area shape="rect" id="Node000028" href="$classspdlog_1_1details_1_1f__formatter.html" title=" " alt="" coords="239,1574,451,1614"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="91,1354,105,1401,127,1457,160,1513,181,1538,204,1560,240,1579,237,1583,201,1564,177,1542,156,1516,123,1460,100,1403,86,1356"/>
+<area shape="rect" id="Node000029" href="$classspdlog_1_1details_1_1full__formatter.html" title=" " alt="" coords="271,1638,418,1678"/>
+<area shape="poly" id="edge28_Node000001_Node000029" title=" " alt="" coords="87,1355,97,1414,118,1487,133,1525,153,1561,176,1595,204,1624,236,1642,272,1652,270,1657,234,1647,201,1628,172,1598,148,1564,129,1527,113,1489,92,1415,82,1356"/>
+<area shape="rect" id="Node000030" href="$classspdlog_1_1details_1_1level__formatter.html" title=" " alt="" coords="239,1702,451,1742"/>
+<area shape="poly" id="edge29_Node000001_Node000030" title=" " alt="" coords="85,1356,91,1426,109,1516,124,1563,145,1609,171,1651,204,1688,221,1700,240,1709,237,1713,218,1704,201,1692,167,1654,140,1611,120,1565,104,1517,86,1427,79,1356"/>
+<area shape="rect" id="Node000031" href="$classspdlog_1_1details_1_1m__formatter.html" title=" " alt="" coords="239,1766,451,1806"/>
+<area shape="poly" id="edge30_Node000001_Node000031" title=" " alt="" coords="89,1355,105,1448,130,1567,164,1680,184,1723,205,1752,221,1764,240,1773,237,1778,218,1769,201,1756,179,1726,159,1682,125,1569,100,1449,84,1356"/>
+<area shape="rect" id="Node000032" href="$classspdlog_1_1details_1_1name__formatter.html" title=" " alt="" coords="239,1830,451,1870"/>
+<area shape="poly" id="edge31_Node000001_Node000032" title=" " alt="" coords="88,1355,101,1461,126,1599,142,1669,160,1731,181,1782,205,1816,221,1829,240,1838,237,1842,218,1833,201,1820,177,1785,155,1733,137,1670,120,1600,96,1462,82,1356"/>
+<area shape="rect" id="Node000033" href="$classspdlog_1_1details_1_1p__formatter.html" title=" " alt="" coords="239,1894,451,1934"/>
+<area shape="poly" id="edge32_Node000001_Node000033" title=" " alt="" coords="87,1356,99,1473,121,1631,137,1711,156,1782,179,1841,205,1880,221,1893,240,1902,237,1907,218,1897,201,1884,174,1843,151,1784,132,1712,116,1632,93,1474,81,1356"/>
+<area shape="rect" id="Node000034" href="$classspdlog_1_1details_1_1pid__formatter.html" title=" " alt="" coords="239,1958,451,1998"/>
+<area shape="poly" id="edge33_Node000001_Node000034" title=" " alt="" coords="86,1355,96,1485,117,1662,133,1752,152,1833,176,1900,190,1925,205,1944,221,1957,240,1966,237,1971,218,1962,201,1948,185,1928,171,1902,147,1835,128,1753,112,1663,90,1485,80,1356"/>
+<area shape="rect" id="Node000035" href="$classspdlog_1_1details_1_1r__formatter.html" title=" " alt="" coords="239,2022,451,2062"/>
+<area shape="poly" id="edge34_Node000001_Node000035" title=" " alt="" coords="85,1356,93,1497,113,1694,128,1793,149,1884,174,1958,189,1987,205,2008,221,2021,240,2030,237,2035,218,2026,201,2012,184,1990,169,1961,144,1886,123,1794,108,1694,88,1498,80,1356"/>
+<area shape="rect" id="Node000036" href="$classspdlog_1_1details_1_1short__filename__formatter.html" title=" " alt="" coords="207,2086,483,2126"/>
+<area shape="poly" id="edge35_Node000001_Node000036" title=" " alt="" coords="85,1356,91,1509,109,1724,124,1834,145,1935,171,2017,187,2048,205,2072,218,2084,215,2088,201,2076,183,2051,167,2019,140,1936,119,1835,103,1725,85,1509,79,1356"/>
+<area shape="rect" id="Node000037" href="$classspdlog_1_1details_1_1short__level__formatter.html" title=" " alt="" coords="219,2150,470,2190"/>
+<area shape="poly" id="edge36_Node000001_Node000037" title=" " alt="" coords="84,1356,88,1520,105,1755,120,1876,141,1986,169,2076,186,2110,205,2136,221,2150,218,2154,201,2140,181,2113,164,2078,136,1987,115,1876,99,1756,83,1520,79,1356"/>
+<area shape="rect" id="Node000038" href="$classspdlog_1_1details_1_1source__filename__formatter.html" title=" " alt="" coords="207,2214,483,2254"/>
+<area shape="poly" id="edge37_Node000001_Node000038" title=" " alt="" coords="84,1356,86,1531,91,1654,101,1786,116,1916,137,2036,151,2089,167,2134,184,2172,205,2200,218,2212,214,2216,201,2204,180,2175,162,2136,146,2090,132,2037,110,1917,95,1786,86,1654,81,1531,78,1356"/>
+<area shape="rect" id="Node000039" href="$classspdlog_1_1details_1_1source__funcname__formatter.html" title=" " alt="" coords="203,2278,487,2318"/>
+<area shape="poly" id="edge38_Node000001_Node000039" title=" " alt="" coords="83,1356,84,1543,88,1675,97,1817,111,1958,133,2087,148,2143,164,2193,183,2234,205,2264,218,2276,214,2280,201,2268,178,2236,159,2195,142,2145,128,2088,106,1959,92,1817,83,1675,79,1543,78,1356"/>
+<area shape="rect" id="Node000040" href="$classspdlog_1_1details_1_1source__linenum__formatter.html" title=" " alt="" coords="209,2342,481,2382"/>
+<area shape="poly" id="edge39_Node000001_Node000040" title=" " alt="" coords="86,1356,99,1568,124,1877,141,2033,160,2170,181,2273,193,2308,205,2328,218,2340,214,2344,201,2332,188,2310,176,2274,154,2170,135,2034,119,1878,94,1568,80,1356"/>
+<area shape="rect" id="Node000041" href="$classspdlog_1_1details_1_1source__location__formatter.html" title=" " alt="" coords="209,2406,480,2446"/>
+<area shape="poly" id="edge40_Node000001_Node000041" title=" " alt="" coords="86,1356,98,1580,122,1910,138,2076,158,2222,180,2333,192,2370,205,2392,218,2404,214,2408,201,2396,187,2372,175,2334,152,2223,133,2077,117,1910,92,1580,80,1356"/>
+<area shape="rect" id="Node000042" href="$classspdlog_1_1details_1_1t__formatter.html" title=" " alt="" coords="239,2470,451,2510"/>
+<area shape="poly" id="edge41_Node000001_Node000042" title=" " alt="" coords="85,1356,97,1592,120,1943,136,2119,156,2275,179,2393,191,2433,205,2456,221,2470,240,2479,237,2484,218,2474,201,2460,187,2435,174,2394,151,2276,131,2120,115,1943,91,1592,80,1356"/>
+<area shape="rect" id="Node000043" href="$classspdlog_1_1details_1_1v__formatter.html" title=" " alt="" coords="239,2534,451,2574"/>
+<area shape="poly" id="edge42_Node000001_Node000043" title=" " alt="" coords="85,1355,95,1603,118,1974,134,2162,154,2327,178,2453,191,2495,205,2520,220,2534,240,2543,237,2548,218,2538,201,2524,186,2497,172,2454,149,2328,129,2162,112,1975,90,1603,80,1356"/>
+<area shape="rect" id="Node000044" href="$classspdlog_1_1details_1_1z__formatter.html" title=" " alt="" coords="239,2598,451,2638"/>
+<area shape="poly" id="edge43_Node000001_Node000044" title=" " alt="" coords="85,1355,94,1615,116,2006,132,2205,152,2380,176,2513,190,2558,205,2584,221,2598,240,2608,237,2612,218,2602,201,2588,185,2560,171,2514,147,2381,127,2205,110,2007,89,1615,80,1356"/>
+<area shape="rect" id="Node000003" href="$classcustom__test__flag.html" title=" " alt="" coords="539,5,673,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,31,539,21,539,27,435,36"/>
+<area shape="rect" id="Node000004" href="$classmy__formatter__flag.html" title=" " alt="" coords="535,55,677,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="434,48,535,58,534,63,434,53"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="Catch::Matchers::StdString::StringMatcherBase" name="Catch::Matchers::StdString::StringMatcherBase">
+<area shape="rect" id="Node000001" title=" " alt="" coords="741,101,936,141"/>
+<area shape="rect" id="Node000006" href="$structCatch_1_1Matchers_1_1StdString_1_1ContainsMatcher.html" title=" " alt="" coords="985,5,1180,45"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="894,93,984,55,1017,43,1019,48,986,60,896,98"/>
+<area shape="rect" id="Node000007" href="$structCatch_1_1Matchers_1_1StdString_1_1EndsWithMatcher.html" title=" " alt="" coords="985,69,1180,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="949,104,985,99,986,105,950,109"/>
+<area shape="rect" id="Node000008" href="$structCatch_1_1Matchers_1_1StdString_1_1EqualsMatcher.html" title=" " alt="" coords="985,133,1180,173"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="950,133,986,138,985,143,949,138"/>
+<area shape="rect" id="Node000009" href="$structCatch_1_1Matchers_1_1StdString_1_1StartsWithMatcher.html" title=" " alt="" coords="985,197,1180,237"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="896,145,986,183,1019,195,1017,200,984,188,894,150"/>
+<area shape="rect" id="Node000002" href="$structCatch_1_1Matchers_1_1Impl_1_1MatcherBase.html" title=" " alt="" coords="528,101,692,141"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="706,119,741,119,741,124,706,124"/>
+<area shape="rect" id="Node000003" href="$classCatch_1_1Matchers_1_1Impl_1_1MatcherUntypedBase.html" title=" " alt="" coords="308,69,479,109"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="493,101,528,107,527,112,492,107"/>
+<area shape="rect" id="Node000004" href="$structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod.html" title=" " alt="" coords="308,133,479,173"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="492,136,527,131,528,136,493,141"/>
+<area shape="rect" id="Node000005" href="$structCatch_1_1Matchers_1_1Impl_1_1MatcherMethod.html" title=" " alt="" coords="5,133,217,173"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="231,151,308,151,308,156,231,156"/>
+</map>

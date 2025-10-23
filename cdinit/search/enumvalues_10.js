@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['read_5fenv_5ffile_0',['READ_ENV_FILE',['../service-constants_8h.html#a76414fe42adbc3ed8b8c163dc6543d0eac2a1229e02e89f48fb0bc4491b4f1cb2',1,'service-constants.h']]],
+  ['ready_5fnotification_1',['READY_NOTIFICATION',['../namespacedinit__load.html#aa9e9108e2525fb4c37a69632e8090873a591082bb84698012666529c549b55a1d',1,'dinit_load']]],
+  ['rearm_2',['REARM',['../namespacedasynq.html#a5008efa1a8b958f96f14d6bfbc5d0b9eab277cf6219c8bce0985cd74b6da69150',1,'dasynq']]],
+  ['reboot_3',['REBOOT',['../service-constants_8h.html#a6ac97961fe8e0cfe0fa703481f95f4e9a65abf85acd7ea0c82f179038bdc375f5',1,'service-constants.h']]],
+  ['regular_4',['REGULAR',['../service-constants_8h.html#a29308eff5247b9f0a38af7b9748f9b59a820ead78f0fa32544c7ba38fe7ff53d9',1,'service-constants.h']]],
+  ['release_5fservice_5',['RELEASE_SERVICE',['../dinitctl_8cc.html#a239245f8fe36e4d081f37a60a330b428a770465cc502ef999577cb7319a75c2ba',1,'dinitctl.cc']]],
+  ['releaseservice_6',['RELEASESERVICE',['../control-cmds_8h.html#a4526d8e7ec31b939ff5f24d2bc280f38a1cc693ec408acc27e88f0503bd92f9a8',1,'control-cmds.h']]],
+  ['reload_5fservice_7',['RELOAD_SERVICE',['../dinitctl_8cc.html#a239245f8fe36e4d081f37a60a330b428a87c6af97237d27e58656ccbd9918fed1',1,'dinitctl.cc']]],
+  ['reloadservice_8',['RELOADSERVICE',['../control-cmds_8h.html#a4526d8e7ec31b939ff5f24d2bc280f38a08bbb6f4ef49ad1a3f4718e6ad65494c',1,'control-cmds.h']]],
+  ['rem_5fdep_9',['REM_DEP',['../control-cmds_8h.html#a4526d8e7ec31b939ff5f24d2bc280f38a41d7d9a04706f91e118c806a188b7ffb',1,'control-cmds.h']]],
+  ['remain_10',['REMAIN',['../service-constants_8h.html#a6ac97961fe8e0cfe0fa703481f95f4e9a167412f51d9d0f5ea30b26ea22330e32',1,'service-constants.h']]],
+  ['remove_11',['REMOVE',['../namespacedasynq.html#a5008efa1a8b958f96f14d6bfbc5d0b9ea78baf367c4626442174307cdf41c6538',1,'dasynq']]],
+  ['removed_12',['REMOVED',['../namespacedasynq.html#a5008efa1a8b958f96f14d6bfbc5d0b9eab3461745d64b12346503b2980e436db5',1,'dasynq']]],
+  ['requeue_13',['REQUEUE',['../namespacedasynq.html#a5008efa1a8b958f96f14d6bfbc5d0b9ea86621a260dfc8ef43e6b31a30088b43e',1,'dasynq']]],
+  ['restart_14',['RESTART',['../namespacedinit__load.html#aa9e9108e2525fb4c37a69632e8090873a1104c54a9ec6549e4ef9562b687596fb',1,'dinit_load']]],
+  ['restart_5fdelay_15',['RESTART_DELAY',['../namespacedinit__load.html#aa9e9108e2525fb4c37a69632e8090873abe01f211f80190493b078fe3bd64b708',1,'dinit_load']]],
+  ['restart_5flimit_5fcount_16',['RESTART_LIMIT_COUNT',['../namespacedinit__load.html#aa9e9108e2525fb4c37a69632e8090873ab8fd3599454719a90f001c49fa0f9528',1,'dinit_load']]],
+  ['restart_5flimit_5finterval_17',['RESTART_LIMIT_INTERVAL',['../namespacedinit__load.html#aa9e9108e2525fb4c37a69632e8090873a4e6c68d875804caa580803f44cde7610',1,'dinit_load']]],
+  ['restart_5fservice_18',['RESTART_SERVICE',['../dinitctl_8cc.html#a239245f8fe36e4d081f37a60a330b428ad5960e09aa59ca6d18a315542df45507',1,'dinitctl.cc']]],
+  ['rm_5fdependency_19',['RM_DEPENDENCY',['../dinitctl_8cc.html#a239245f8fe36e4d081f37a60a330b428ab7d0cb87eafcd1fb2f45a515d0802b9e',1,'dinitctl.cc']]],
+  ['run_5fas_20',['RUN_AS',['../namespacedinit__load.html#aa9e9108e2525fb4c37a69632e8090873a8dda5941a28859eff18f3ef0ad105951',1,'dinit_load']]]
+];

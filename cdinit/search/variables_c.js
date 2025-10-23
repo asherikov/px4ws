@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['name_0',['name',['../classservice__record.html#a76d4e6e53ecf7a12bdd41528e42452dd',1,'service_record::name'],['../classprelim__dep.html#a1ef100d1a1ec149e958fc36ef4f32954',1,'prelim_dep::name']]],
+  ['negation_5fv_1',['negation_v',['http://en.cppreference.com/w/cpp/types/negation.html',1,'std']]],
+  ['next_2',['next',['../structlls__node.html#a34d5b72a76328f7d80e02a0ea3cebcc4',1,'lls_node::next'],['../classdasynq_1_1v2_1_1dprivate_1_1waitqueue__node.html#a7e0c2db4a2ee45a48cdeecf278248f9d',1,'dasynq::v2::dprivate::waitqueue_node::next'],['../structlinked__uo__set_1_1linked__record.html#a603f811cdeb087d058577e6d2ce17d8f',1,'linked_uo_set::linked_record::next'],['../structlld__node.html#a4f0c89e73e37d9a52bb47e0671d97252',1,'lld_node::next']]],
+  ['next_5fsept_3',['next_sept',['../classdasynq_1_1btree__set.html#a9696aeffa925978c6fb932104ed31117',1,'dasynq::btree_set']]],
+  ['nice_4',['nice',['../structrun__proc__params.html#a012ab48595f6fb63f78717fbd77fe685',1,'run_proc_params::nice'],['../classbase__process__service.html#a61475ebe11634c4a35e6932108f55ed2',1,'base_process_service::nice'],['../classdinit__load_1_1service__settings__wrapper.html#a9fc1a83ebb4ad89825c89ddbe69a8d20',1,'dinit_load::service_settings_wrapper::nice']]],
+  ['nice_5fis_5fset_5',['nice_is_set',['../classdinit__load_1_1service__settings__wrapper.html#a942475914888cc9ac7db40668d7d0e8a',1,'dinit_load::service_settings_wrapper::nice_is_set'],['../structrun__proc__params.html#adf12190fa9ccdd88b0582097495e030f',1,'run_proc_params::nice_is_set'],['../classbase__process__service.html#a0e406f84c77b86ed3fe5168d7c966b8c',1,'base_process_service::nice_is_set']]],
+  ['no_5fnew_5fprivs_6',['no_new_privs',['../structservice__flags__t.html#a92eb733a8310929fb6195aa7b648ff1e',1,'service_flags_t']]],
+  ['nodedata_7',['nodedata',['../structdasynq_1_1btree__set_1_1heapnode.html#ab92cf2a625d29604da6eb0412c9c3e7e',1,'dasynq::btree_set::heapnode']]],
+  ['notification_5ffd_8',['notification_fd',['../classbase__process__service.html#abccbf8226a65a574b02683bf148fa33a',1,'base_process_service']]],
+  ['notification_5fvar_9',['notification_var',['../classbase__process__service.html#a01e3e95d6bf738b148a37cf2284a54ba',1,'base_process_service']]],
+  ['notify_5ffd_10',['notify_fd',['../structrun__proc__params.html#ad6903325cc4966bc5ca952d659fbccb4',1,'run_proc_params']]],
+  ['notify_5fvar_11',['notify_var',['../structrun__proc__params.html#a557740c03f02b01022bd504cb3dcb776',1,'run_proc_params']]],
+  ['num_5falloced_12',['num_alloced',['../classdasynq_1_1btree__set.html#a3bb234c597abb308798a103213fe8507',1,'dasynq::btree_set']]],
+  ['num_5fnodes_13',['num_nodes',['../classdasynq_1_1dary__heap.html#adc602ead68f502c5b1001607f9b6399e',1,'dasynq::dary_heap']]],
+  ['num_5fsepts_14',['num_septs',['../classdasynq_1_1btree__set.html#a4e9cf891c72dfe5a93ad632e1f466a18',1,'dasynq::btree_set']]],
+  ['num_5fsepts_5fneeded_15',['num_septs_needed',['../classdasynq_1_1btree__set.html#a3996a960b1a68d32bf88df3178a1cbed',1,'dasynq::btree_set']]]
+];

@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['dark_0',['dark',['../classspdlog_1_1sinks_1_1ansicolor__sink.html#a6222fbc15677cb5cc26a0b0d1deae220',1,'spdlog::sinks::ansicolor_sink']]],
+  ['data_1',['data',['../structstring__value.html#a9bd9eaf37486cf6b36bc5e475d9fd50c',1,'string_value::data'],['../namespaceextract__version.html#a814f8396ecd14daca6006f27cadb467c',1,'extract_version.data'],['../structnamed__arg__value.html#a175ba9f5700e0b4edb8683a254e01941',1,'named_arg_value::data']]],
+  ['data_5f_2',['data_',['../classbasic__string__view.html#a10fc664ae9c2d8c40bc2a9ede0380507',1,'basic_string_view::data_'],['../classiterator__buffer.html#ae9d3c9837c955fb335886b5f1c0d6178',1,'iterator_buffer::data_'],['../classcounting__buffer.html#a66060cd765f687bf0e7c1fcdbfbb6cfc',1,'counting_buffer::data_'],['../classformat__arg__store.html#a8c4455204a76935307f85e89fad3492f',1,'format_arg_store::data_'],['../structfill__t.html#a9c66509e759d8d186dc95d7f1db3d2ab',1,'fill_t::data_'],['../classbytes.html#a41c22bd7344ce76bd918887512fe1acf',1,'bytes::data_'],['../classbasic__cstring__view.html#a465a1145b8b7283927c11a4dfb494e9d',1,'basic_cstring_view::data_'],['../classdynamic__format__arg__store.html#a945374d17adbecffe69386a0c098b95a',1,'dynamic_format_arg_store::data_']]],
+  ['days_3',['days',['../namespacespdlog_1_1details.html#a5a7be08dfeaa6df919a3c3f59a978563',1,'spdlog::details']]],
+  ['db_5fname_5f_4',['db_name_',['../classspdlog_1_1sinks_1_1mongo__sink.html#ae202a4cf0f5144ea40c93b76abfc4b06',1,'spdlog::sinks::mongo_sink']]],
+  ['decimal_5fdigits_5',['decimal_digits',['../structdragonbox_1_1float__info_3_01float_01_4.html#ab0fb2514a0a9e0c2381513d5df6a7ee7',1,'dragonbox::float_info&lt; float &gt;::decimal_digits'],['../structdragonbox_1_1float__info_3_01double_01_4.html#ae06a21434fe45b1bf1a939657bd85c77',1,'dragonbox::float_info&lt; double &gt;::decimal_digits']]],
+  ['default_5fasync_5fq_5fsize_6',['default_async_q_size',['../namespacespdlog_1_1details.html#a050e412794a5af8916ef36e4ed100c25',1,'spdlog::details']]],
+  ['default_5feol_7',['default_eol',['../namespacespdlog_1_1details_1_1os.html#aa84a047b93ed98c09826ccbd5e5afa46',1,'spdlog::details::os']]],
+  ['default_5flogger_5f_8',['default_logger_',['../classspdlog_1_1details_1_1registry.html#aedad7e28c93de44e2e2f410f01ee8cfb',1,'spdlog::details::registry']]],
+  ['default_5fspecs_9',['default_specs',['../structformatter_3_01std_1_1chrono_1_1time__point_3_01std_1_1chrono_1_1system__clock_00_01Duration_01_4_00_01Char_01_4.html#a74cf6a3e93faecdab0c9bb311658177e',1,'formatter&lt; std::chrono::time_point&lt; std::chrono::system_clock, Duration &gt;, Char &gt;']]],
+  ['delay_5f_10',['delay_',['../classspdlog_1_1sinks_1_1test__sink.html#ab042e8f3b8f72b3e3eed20de15125f9a',1,'spdlog::sinks::test_sink']]],
+  ['delimiter_11',['delimiter',['../structfmt_1_1formatter_3_01spdlog_1_1details_1_1dump__info_3_01T_01_4_01_4.html#a983179e358a18de37741ae6846c93d8e',1,'fmt::formatter&lt; spdlog::details::dump_info&lt; T &gt; &gt;']]],
+  ['desc_12',['desc',['../classformat__arg__store.html#acd47df094f80be88aa89975b342523bc',1,'format_arg_store']]],
+  ['desc_5f_13',['desc_',['../classbasic__format__args.html#adec0b23c6fe57883ccb17d99b1498753',1,'basic_format_args']]],
+  ['description_14',['description',['../structCatch_1_1TestCaseInfo.html#a37fe2db9425bc45f6a33893eac31198e',1,'Catch::TestCaseInfo::description'],['../structCatch_1_1SectionInfo.html#a0052060219a6de74bb7ade34d4163a4e',1,'Catch::SectionInfo::description']]],
+  ['dest_5f_15',['dest_',['../classspdlog_1_1details_1_1scoped__padder.html#a9c9984ce9206313ce12b581aef314017',1,'spdlog::details::scoped_padder']]],
+  ['digits_16',['digits',['../structbasic__data.html#a5012a7b8b0b56e512c66039b65daeb3d',1,'basic_data']]],
+  ['disjunction_5fv_17',['disjunction_v',['http://en.cppreference.com/w/cpp/types/disjunction.html',1,'std']]],
+  ['divisibility_5fcheck_5fby_5f5_5fthreshold_18',['divisibility_check_by_5_threshold',['../structdragonbox_1_1float__info_3_01float_01_4.html#ab7b21ace649cecc2433ea913d89786bf',1,'dragonbox::float_info&lt; float &gt;::divisibility_check_by_5_threshold'],['../structdragonbox_1_1float__info_3_01double_01_4.html#a07dd3de5739172f1478270bda2808bf0',1,'dragonbox::float_info&lt; double &gt;::divisibility_check_by_5_threshold']]],
+  ['double_5fsignificand_5fsize_19',['double_significand_size',['../classdetail_1_1fp.html#a6a972f413b54152bc3a748bbe41b39c5',1,'detail::fp']]],
+  ['double_5fvalue_20',['double_value',['../classvalue.html#af4c2004ea8d1ac88e74f56844645e9bc',1,'value']]],
+  ['durationinseconds_21',['durationInSeconds',['../structCatch_1_1SectionEndInfo.html#a7c262f2dab9cff166b8eca620c47eea5',1,'Catch::SectionEndInfo']]],
+  ['dynamic_5fargs_5f_22',['dynamic_args_',['../classdynamic__format__arg__store.html#ad5a82849fb8ab4f8618d94f19a990457',1,'dynamic_format_arg_store']]]
+];

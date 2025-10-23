@@ -1,0 +1,9 @@
+<map id="dinit_protocol_error" name="dinit_protocol_error">
+<area shape="rect" id="Node000001" title=" " alt="" coords="225,5,375,31"/>
+<area shape="rect" id="Node000002" href="$classcp__old__client__exception.html" title=" " alt="" coords="5,79,184,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="255,38,129,81,127,76,253,33"/>
+<area shape="rect" id="Node000003" href="$classcp__old__server__exception.html" title=" " alt="" coords="209,79,391,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="303,44,303,79,297,79,297,44"/>
+<area shape="rect" id="Node000004" href="$classdinit__unknown__sd__conf.html" title=" " alt="" coords="415,79,590,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="346,33,471,76,469,81,344,38"/>
+</map>
