@@ -17,7 +17,6 @@ Overview
         </a>
     </td>
     <td align="center">
-        <br />
         <a href="https://cloudsmith.io/~asherikov-aV7/repos/all/packages/detail/deb/px4ws--reldebug--all/latest/a=amd64;d=ubuntu%252Fnoble;t=binary/">
         <img src="https://api-prd.cloudsmith.io/v1/badges/version/asherikov-aV7/all/deb/px4ws--reldebug--all/latest/a=amd64;d=ubuntu%252Fnoble;t=binary/?render=true&show_latest=true" alt="Latest version of 'px4ws' @ Cloudsmith">
         </a>
@@ -58,6 +57,14 @@ Building
 
 - Dependencies can be installed with `rosdep` except a few PX4 python
   dependencies that are installed with cmake during build step.
+
+Binary package
+--------------
+
+- Go to `cloudsmith` package repo, add new apt source, and run apt update.
+- `sudo apt install px4ws--reldebug--all`
+- `source /opt/px4ws/px4ws__reldebug__all/setup.bash`
+- Launch as explained below.
 
 Running
 -------
@@ -152,13 +159,13 @@ Workspace status
 -----
 :::{.wide}
 ```
-tags/0.1.0-0-gc22d283
+tags/0.1.0-0-ge3a2ed0
 WSH: >>> status: git sources ---
 Flags: H - version hash mismatch, M - uncommited changes
 name                                                version          actual version                    HM repository
 ----                                                -------          --------------                    -- ----------
 PX4-Autopilot/PX4-Autopilot                         main             heads/main-0-g2e586c4                https://github.com/asherikov/PX4-Autopilot.git
-cdinit                                              master           heads/master-0-g3aef395              https://github.com/asherikov/cdinit.git
+cdinit                                              master           heads/master-0-g3237bea              https://github.com/asherikov/cdinit.git
 dds_agent/Micro-XRCE-DDS-Agent/Micro-XRCE-DDS-Agent v2.4.3           tags/v2.4.3-0-g7362281               https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
 dds_agent/spdlog                                    v1.9.2           tags/v1.9.2-0-geb32206               https://github.com/gabime/spdlog.git
 px4_msgs                                            as_disable_tests heads/as_disable_tests-0-g1398c8b    https://github.com/asherikov/px4_msgs.git
