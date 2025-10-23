@@ -1,0 +1,11 @@
+type = scripted
+command = gz service -s /gazebo/worlds --reqtype gz.msgs.Empty --reptype gz.msgs.StringMsg_V --timeout 10000 --req
+
+stop-timeout = 20.0
+
+log-type = pipe
+depends-on = px4sitl_gz_headless
+depends-ms = cdinit_log@px4sitl_gz_wait
+
+options = always-chain
+chain-to = cdinit_shutdown

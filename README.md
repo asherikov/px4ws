@@ -17,7 +17,6 @@ Overview
         </a>
     </td>
     <td align="center">
-        <br />
         <a href="https://cloudsmith.io/~asherikov-aV7/repos/all/packages/detail/deb/px4ws--reldebug--all/latest/a=amd64;d=ubuntu%252Fnoble;t=binary/">
         <img src="https://api-prd.cloudsmith.io/v1/badges/version/asherikov-aV7/all/deb/px4ws--reldebug--all/latest/a=amd64;d=ubuntu%252Fnoble;t=binary/?render=true&show_latest=true" alt="Latest version of 'px4ws' @ Cloudsmith">
         </a>
@@ -58,6 +57,14 @@ Building
 
 - Dependencies can be installed with `rosdep` except a few PX4 python
   dependencies that are installed with cmake during build step.
+
+Binary package
+--------------
+
+- Go to `cloudsmith` package repo, add new apt source, and run apt update.
+- `sudo apt install px4ws--reldebug--all`
+- `source /opt/px4ws/px4ws__reldebug__all/setup.bash`
+- Launch as explained below.
 
 Running
 -------
