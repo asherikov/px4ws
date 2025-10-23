@@ -52,8 +52,9 @@ Usage
 Building
 --------
 
-- Compilation is performed with <https://github.com/asherikov/ccws>, although
-  basic `colcon` build should work too.
+- Build `px4sitl` master package. Workspace is designed to be used with
+  <https://github.com/asherikov/ccws>, but basic `colcon` build should work
+  too.
 
 - Dependencies can be installed with `rosdep` except a few PX4 python
   dependencies that are installed with cmake during build step.
@@ -61,7 +62,6 @@ Building
 Running
 -------
 
-- Build `px4sitl` master package.
 - Run `px4sitl.sh -w walls -d 4001 "0,1.0,0,0,0,0" -d 4004 "0,-5.0,0,0,0,0"`
   where `-w` specifies world ('default' if not set), `-d` specifies a drone
   model id and its location (x,y,z,r,p,y). Numerical ids can be found in a
@@ -90,7 +90,7 @@ primarily used to setup environment and working directories.
 # PX4 instances, number after @ symbol is a corresponding system id
 [[+]     ] px4sitl_px4@0 (pid: XXX)
 [[+]     ] px4sitl_px4@1 (pid: XXX)
-# logging services
+# logging services, cdinit_log helper adds timestamps
 [{+}     ] cdinit_log@px4sitl_dds_agent (pid: XXX)
 [{+}     ] cdinit_log@px4sitl_gz_clock (pid: XXX)
 [{+}     ] cdinit_log@px4sitl_gz_gui (pid: XXX)

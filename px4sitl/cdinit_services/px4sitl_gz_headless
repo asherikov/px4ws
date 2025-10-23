@@ -1,5 +1,4 @@
 type = process
-load-options = sub-vars
 command = gz sim --verbose 4 -r -s ${PX4SITL_WORLD_SDF_PATH}
 
 stop-timeout = 20.0
