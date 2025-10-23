@@ -1,9 +1,15 @@
 type = process
 load-options = sub-vars
-command = ros2 run ros_gz_bridge parameter_bridge "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock"
+command = ros2 run ros_gz_bridge parameter_bridge \
+    "/clock@rosgraph_msgs/msg/Clock[gz.msgs.Clock" --ros-args \
+    -p qos_overrides./clock.publisher.reliability:=best_effort \
+    -p qos_overrides./clock.publisher.history_depth:=1
 
 stop-timeout = 20.0
 
 log-type = pipe
 depends-on = px4sitl_gz_headless
 depends-ms = cdinit_log@px4sitl_gz_clock
+
+options = always-chain
+chain-to = cdinit_shutdown

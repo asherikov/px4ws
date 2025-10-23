@@ -6,3 +6,6 @@ stop-timeout = 20.0
 
 log-type = pipe
 depends-ms = cdinit_log@px4sitl_gz_headless
+
+options = always-chain
+chain-to = cdinit_shutdown
