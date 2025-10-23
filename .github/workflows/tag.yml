@@ -17,7 +17,7 @@ jobs:
         uses: asherikov/ccws/.github/workflows/reusable_deb.yaml@master
         with:
             distro: noble
-            workspace_github_repo: asherikov/sharf
+            workspace_github_repo: asherikov/px4ws
             workspace_version: ${{ github.sha }}
             cloudsmith_repo: asherikov-aV7/all/ubuntu/noble
         secrets:
