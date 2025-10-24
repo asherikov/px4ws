@@ -159,13 +159,13 @@ Workspace status
 -----
 :::{.wide}
 ```
-tags/0.1.0-0-g7f51bd2
+tags/0.1.1-0-gf67d45c
 WSH: >>> status: git sources ---
 Flags: H - version hash mismatch, M - uncommited changes
 name                                                version          actual version                    HM repository
 ----                                                -------          --------------                    -- ----------
 PX4-Autopilot/PX4-Autopilot                         main             heads/main-0-g2e586c4                https://github.com/asherikov/PX4-Autopilot.git
-cdinit                                              master           heads/master-0-g3237bea              https://github.com/asherikov/cdinit.git
+cdinit                                              master           heads/master-0-ge51e48a              https://github.com/asherikov/cdinit.git
 dds_agent/Micro-XRCE-DDS-Agent/Micro-XRCE-DDS-Agent v2.4.3           tags/v2.4.3-0-g7362281               https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
 dds_agent/spdlog                                    v1.9.2           tags/v1.9.2-0-geb32206               https://github.com/gabime/spdlog.git
 px4_msgs                                            as_disable_tests heads/as_disable_tests-0-g1398c8b    https://github.com/asherikov/px4_msgs.git

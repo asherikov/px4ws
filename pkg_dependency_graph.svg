@@ -38,15 +38,15 @@
 </g>
 </g>
 <!-- px4sitl&#45;&gt;px4_msgs -->
-<g id="edge1" class="edge">
+<g id="edge3" class="edge">
 <title>px4sitl&#45;&gt;px4_msgs</title>
 <path fill="none" stroke="#ff0000" d="M154.5,-170.25C142.76,-166.26 129.75,-161.14 118.54,-155 105.7,-147.97 92.7,-138.37 81.95,-129.6"/>
 <polygon fill="#ff0000" stroke="#ff0000" points="84.12,-126.85 74.2,-123.12 79.62,-132.22 84.12,-126.85"/>
 </g>
 <!-- cdinit_manager -->
-<g id="node5" class="node">
+<g id="node3" class="node">
 <title>cdinit_manager</title>
-<g id="a_node5"><a xlink:href="./cdinit_manager/index.html" xlink:title="cdinit_manager">
+<g id="a_node3"><a xlink:href="./cdinit_manager/index.html" xlink:title="cdinit_manager">
 <ellipse fill="none" stroke="black" cx="354.54" cy="-106" rx="82.59" ry="18"/>
 <text text-anchor="middle" x="354.54" y="-102.3" font-family="Times,serif" font-size="14.00">cdinit_manager</text>
 </a>
@@ -68,24 +68,30 @@
 </g>
 </g>
 <!-- px4sitl&#45;&gt;dds_agent -->
-<g id="edge3" class="edge">
+<g id="edge1" class="edge">
 <title>px4sitl&#45;&gt;dds_agent</title>
 <path fill="none" stroke="#ff0000" d="M188.54,-162.7C188.54,-154.25 188.54,-143.87 188.54,-134.37"/>
 <polygon fill="#ff0000" stroke="#ff0000" points="192.05,-134.18 188.54,-124.18 185.05,-134.18 192.05,-134.18"/>
 </g>
 <!-- cdinit -->
-<g id="node3" class="node">
+<g id="node4" class="node">
 <title>cdinit</title>
-<g id="a_node3"><a xlink:href="./cdinit/index.html" xlink:title="cdinit">
+<g id="a_node4"><a xlink:href="./cdinit/index.html" xlink:title="cdinit">
 <ellipse fill="none" stroke="black" cx="354.54" cy="-34" rx="37.09" ry="18"/>
 <text text-anchor="middle" x="354.54" y="-30.3" font-family="Times,serif" font-size="14.00">cdinit</text>
 </a>
 </g>
 </g>
+<!-- cdinit_manager&#45;&gt;cdinit -->
+<g id="edge6" class="edge">
+<title>cdinit_manager&#45;&gt;cdinit</title>
+<path fill="none" stroke="#ff0000" d="M354.54,-87.7C354.54,-79.98 354.54,-70.71 354.54,-62.11"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="358.05,-62.1 354.54,-52.1 351.05,-62.1 358.05,-62.1"/>
+</g>
 <!-- cdinit_examples -->
-<g id="node4" class="node">
+<g id="node5" class="node">
 <title>cdinit_examples</title>
-<g id="a_node4"><a xlink:href="./cdinit_examples/index.html" xlink:title="cdinit_examples">
+<g id="a_node5"><a xlink:href="./cdinit_examples/index.html" xlink:title="cdinit_examples">
 <ellipse fill="none" stroke="black" cx="355.54" cy="-181" rx="85.29" ry="18"/>
 <text text-anchor="middle" x="355.54" y="-177.3" font-family="Times,serif" font-size="14.00">cdinit_examples</text>
 </a>
@@ -96,12 +102,6 @@
 <title>cdinit_examples&#45;&gt;cdinit_manager</title>
 <path fill="none" stroke="#ff0000" d="M355.31,-162.7C355.19,-154.25 355.05,-143.87 354.92,-134.37"/>
 <polygon fill="#ff0000" stroke="#ff0000" points="358.42,-134.13 354.78,-124.18 351.42,-134.22 358.42,-134.13"/>
-</g>
-<!-- cdinit_manager&#45;&gt;cdinit -->
-<g id="edge6" class="edge">
-<title>cdinit_manager&#45;&gt;cdinit</title>
-<path fill="none" stroke="#ff0000" d="M354.54,-87.7C354.54,-79.98 354.54,-70.71 354.54,-62.11"/>
-<polygon fill="#ff0000" stroke="#ff0000" points="358.05,-62.1 354.54,-52.1 351.05,-62.1 358.05,-62.1"/>
 </g>
 <!-- spdlog -->
 <g id="node7" class="node">
