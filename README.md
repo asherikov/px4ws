@@ -80,10 +80,11 @@ Running
 cdinit services
 ---------------
 
-All components are started using `dinit` service files, see
-<https://github.com/davmac314/dinit>, <https://github.com/asherikov/cdinit>
-provides a cmake wrapper for `dinit` and helper scripts. Shell scripts are
-primarily used to setup environment and working directories.
+All components are started using `dinit` service files located in
+`px4sitl/cdinit_services/`, see <https://github.com/davmac314/dinit>,
+<https://github.com/asherikov/cdinit> provides a cmake wrapper for `dinit` and
+helper scripts. Shell scripts are primarily used to setup environment and
+working directories.
 
 ### Example
 
@@ -117,7 +118,7 @@ primarily used to setup environment and working directories.
 [{+}     ] px4sitl_ros
 ```
 - Location of the log files depends on environment variables, e.g.,
-  `ROS_LOG_DIR`, and by default it is set to `${HOME}/.sharf/cdinit`.
+  `ROS_LOG_DIR` and is printed on startup.
 - Terminate using `cdinit.sh shutdown`. Since all processes are required,
   termination can also be performed by stopping a particular service, e.g.,
   `cdinit.sh stop --force px4sitl_gz_clock`.
