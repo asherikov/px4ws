@@ -1,5 +1,6 @@
 type = process
-command = env PX4_GZ_STANDALONE=YES px4 -d -w ${PX4SITL_ROOT} -i $1
+command = env PX4_GZ_STANDALONE=YES PX4_UXRCE_DDS_NS=px4_drone_$1 \
+    px4 -d -w ${CDINIT_SESSION_ROOT}/px4_$1 -i $1 ${CDINIT_INSTALL_ROOT}/px4/etc
 
 stop-timeout = 20.0
 

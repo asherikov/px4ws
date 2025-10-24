@@ -16,6 +16,9 @@
     <exec_depend>dds_agent</exec_depend>
     <exec_depend>px4_msgs</exec_depend>
     <exec_depend>ros_gz</exec_depend>
+
     <build_depend>libopencv-dev</build_depend>
     <exec_depend>libopencv-dev</exec_depend>
+    <build_depend>libgstreamer1.0-dev</build_depend>
+    <exec_depend>libgstreamer1.0-dev</exec_depend>
 </package>
