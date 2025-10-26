@@ -138,4 +138,3 @@ TODO
 - `FindOpticalFlow.cmake` is installed in a wrong place.
 - Is installation of `px4/build/` intentional?
 - `CMakeLists.txt`, `package.xml` should not be installed.
-- Is `spdlog` needed?
