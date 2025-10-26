@@ -53,7 +53,7 @@
 </g>
 </g>
 <!-- px4sitl&#45;&gt;dds_agent -->
-<g id="edge2" class="edge">
+<g id="edge3" class="edge">
 <title>px4sitl&#45;&gt;dds_agent</title>
 <path fill="none" stroke="#ff0000" d="M188.54,-162.7C188.54,-154.25 188.54,-143.87 188.54,-134.37"/>
 <polygon fill="#ff0000" stroke="#ff0000" points="192.05,-134.18 188.54,-124.18 185.05,-134.18 192.05,-134.18"/>
@@ -68,7 +68,7 @@
 </g>
 </g>
 <!-- px4sitl&#45;&gt;cdinit_manager -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>px4sitl&#45;&gt;cdinit_manager</title>
 <path fill="none" stroke="#ff0000" d="M220.93,-169.38C232.88,-165.21 246.45,-160.19 258.54,-155 277.6,-146.82 298.2,-136.59 315.34,-127.68"/>
 <polygon fill="#ff0000" stroke="#ff0000" points="317.24,-130.63 324.47,-122.88 313.99,-124.43 317.24,-130.63"/>

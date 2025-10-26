@@ -38,7 +38,7 @@
 </g>
 </g>
 <!-- px4sitl&#45;&gt;px4_msgs -->
-<g id="edge3" class="edge">
+<g id="edge1" class="edge">
 <title>px4sitl&#45;&gt;px4_msgs</title>
 <path fill="none" stroke="#ff0000" d="M154.5,-170.25C142.76,-166.26 129.75,-161.14 118.54,-155 105.7,-147.97 92.7,-138.37 81.95,-129.6"/>
 <polygon fill="#ff0000" stroke="#ff0000" points="84.12,-126.85 74.2,-123.12 79.62,-132.22 84.12,-126.85"/>
@@ -53,7 +53,7 @@
 </g>
 </g>
 <!-- px4sitl&#45;&gt;cdinit_manager -->
-<g id="edge2" class="edge">
+<g id="edge3" class="edge">
 <title>px4sitl&#45;&gt;cdinit_manager</title>
 <path fill="none" stroke="#ff0000" d="M220.92,-169.35C232.87,-165.18 246.44,-160.17 258.54,-155 277.78,-146.79 298.6,-136.56 315.91,-127.65"/>
 <polygon fill="#ff0000" stroke="#ff0000" points="317.88,-130.57 325.14,-122.86 314.65,-124.36 317.88,-130.57"/>
@@ -68,7 +68,7 @@
 </g>
 </g>
 <!-- px4sitl&#45;&gt;dds_agent -->
-<g id="edge1" class="edge">
+<g id="edge2" class="edge">
 <title>px4sitl&#45;&gt;dds_agent</title>
 <path fill="none" stroke="#ff0000" d="M188.54,-162.7C188.54,-154.25 188.54,-143.87 188.54,-134.37"/>
 <polygon fill="#ff0000" stroke="#ff0000" points="192.05,-134.18 188.54,-124.18 185.05,-134.18 192.05,-134.18"/>

@@ -80,10 +80,11 @@ Running
 cdinit services
 ---------------
 
-All components are started using `dinit` service files, see
-<https://github.com/davmac314/dinit>, <https://github.com/asherikov/cdinit>
-provides a cmake wrapper for `dinit` and helper scripts. Shell scripts are
-primarily used to setup environment and working directories.
+All components are started using `dinit` service files located in
+`px4sitl/cdinit_services/`, see <https://github.com/davmac314/dinit>,
+<https://github.com/asherikov/cdinit> provides a cmake wrapper for `dinit` and
+helper scripts. Shell scripts are primarily used to setup environment and
+working directories.
 
 ### Example
 
@@ -117,7 +118,7 @@ primarily used to setup environment and working directories.
 [{+}     ] px4sitl_ros
 ```
 - Location of the log files depends on environment variables, e.g.,
-  `ROS_LOG_DIR`, and by default it is set to `${HOME}/.sharf/cdinit`.
+  `ROS_LOG_DIR` and is printed on startup.
 - Terminate using `cdinit.sh shutdown`. Since all processes are required,
   termination can also be performed by stopping a particular service, e.g.,
   `cdinit.sh stop --force px4sitl_gz_clock`.
@@ -130,6 +131,14 @@ Troubleshooting
   versions installed in parallel: `[libprotobuf ERROR
   google/protobuf/descriptor_database.cc:121] File already exists in database:
   gz/msgs/pointcloud.proto`
+
+TODO
+====
+
+- `FindOpticalFlow.cmake` is installed in a wrong place.
+- Is installation of `px4/build/` intentional?
+- `CMakeLists.txt`, `package.xml` should not be installed.
+- Is `spdlog` needed?
 
 Packages
 ========
@@ -159,13 +168,13 @@ Workspace status
 -----
 :::{.wide}
 ```
-tags/0.1.1-0-gf67d45c
+tags/0.1.2-0-g3a947a9
 WSH: >>> status: git sources ---
 Flags: H - version hash mismatch, M - uncommited changes
 name                                                version          actual version                    HM repository
 ----                                                -------          --------------                    -- ----------
 PX4-Autopilot/PX4-Autopilot                         main             heads/main-0-g2e586c4                https://github.com/asherikov/PX4-Autopilot.git
-cdinit                                              master           heads/master-0-ge51e48a              https://github.com/asherikov/cdinit.git
+cdinit                                              master           heads/master-0-g3bb0858              https://github.com/asherikov/cdinit.git
 dds_agent/Micro-XRCE-DDS-Agent/Micro-XRCE-DDS-Agent v2.4.3           tags/v2.4.3-0-g7362281               https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
 dds_agent/spdlog                                    v1.9.2           tags/v1.9.2-0-geb32206               https://github.com/gabime/spdlog.git
 px4_msgs                                            as_disable_tests heads/as_disable_tests-0-g1398c8b    https://github.com/asherikov/px4_msgs.git

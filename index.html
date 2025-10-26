@@ -13,7 +13,7 @@
 <header>
 <h1 class="title">px4ws</h1>
 <blockquote class="metadata">
-<p class="date before-toc"><time datetime="DATE: 2025-10-24">DATE: 2025-10-24</time></p>
+<p class="date before-toc"><time datetime="DATE: 2025-10-26">DATE: 2025-10-26</time></p>
 </blockquote>
 </header>
 
@@ -36,16 +36,17 @@
   </ul></li>
   </ul></li>
   <li><a href="#troubleshooting" id="toc-troubleshooting"><span class="toc-section-number">3</span> Troubleshooting</a></li>
-  <li><a href="#packages-1" id="toc-packages-1"><span class="toc-section-number">4</span> Packages</a>
+  <li><a href="#todo" id="toc-todo"><span class="toc-section-number">4</span> TODO</a></li>
+  <li><a href="#packages-1" id="toc-packages-1"><span class="toc-section-number">5</span> Packages</a>
   <ul>
-  <li><a href="#dependency-graph" id="toc-dependency-graph"><span class="toc-section-number">4.1</span> Dependency graph</a></li>
-  <li><a href="#doxygen-documentation" id="toc-doxygen-documentation"><span class="toc-section-number">4.2</span> Doxygen documentation</a></li>
-  <li><a href="#workspace-status" id="toc-workspace-status"><span class="toc-section-number">4.3</span> Workspace status</a></li>
+  <li><a href="#dependency-graph" id="toc-dependency-graph"><span class="toc-section-number">5.1</span> Dependency graph</a></li>
+  <li><a href="#doxygen-documentation" id="toc-doxygen-documentation"><span class="toc-section-number">5.2</span> Doxygen documentation</a></li>
+  <li><a href="#workspace-status" id="toc-workspace-status"><span class="toc-section-number">5.3</span> Workspace status</a></li>
   </ul></li>
-  <li><a href="#useful-links" id="toc-useful-links"><span class="toc-section-number">5</span> Useful links</a>
+  <li><a href="#useful-links" id="toc-useful-links"><span class="toc-section-number">6</span> Useful links</a>
   <ul>
-  <li><a href="#ros1" id="toc-ros1"><span class="toc-section-number">5.1</span> ROS1</a></li>
-  <li><a href="#ros2" id="toc-ros2"><span class="toc-section-number">5.2</span> ROS2</a></li>
+  <li><a href="#ros1" id="toc-ros1"><span class="toc-section-number">6.1</span> ROS1</a></li>
+  <li><a href="#ros2" id="toc-ros2"><span class="toc-section-number">6.2</span> ROS2</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -99,7 +100,7 @@ px4_msgs                                            as_disable_tests https://git
 <li>Terminate by closing Gazebo gui, or with <code>cdinit.sh shutdown</code>.</li>
 </ul>
 <h2 data-number="2.4" id="cdinit-services"><span class="header-section-number">2.4</span> cdinit services</h2>
-<p>All components are started using <code>dinit</code> service files, see <a href="https://github.com/davmac314/dinit" class="uri">https://github.com/davmac314/dinit</a>, <a href="https://github.com/asherikov/cdinit" class="uri">https://github.com/asherikov/cdinit</a> provides a cmake wrapper for <code>dinit</code> and helper scripts. Shell scripts are primarily used to setup environment and working directories.</p>
+<p>All components are started using <code>dinit</code> service files located in <code>px4sitl/cdinit_services/</code>, see <a href="https://github.com/davmac314/dinit" class="uri">https://github.com/davmac314/dinit</a>, <a href="https://github.com/asherikov/cdinit" class="uri">https://github.com/asherikov/cdinit</a> provides a cmake wrapper for <code>dinit</code> and helper scripts. Shell scripts are primarily used to setup environment and working directories.</p>
 <h3 data-number="2.4.1" id="example"><span class="header-section-number">2.4.1</span> Example</h3>
 <ul>
 <li>Start <code>px4sitl.sh -w walls -d 4001 "0,1.0,0,0,0,0" -d 4004 "0,-5.0,0,0,0,0"</code></li>
@@ -131,17 +132,24 @@ px4_msgs                                            as_disable_tests https://git
 # Dummy &quot;master&quot; service
 [{+}     ] px4sitl_ros</code></pre>
 <ul>
-<li>Location of the log files depends on environment variables, e.g., <code>ROS_LOG_DIR</code>, and by default it is set to <code>${HOME}/.sharf/cdinit</code>.</li>
+<li>Location of the log files depends on environment variables, e.g., <code>ROS_LOG_DIR</code> and is printed on startup.</li>
 <li>Terminate using <code>cdinit.sh shutdown</code>. Since all processes are required, termination can also be performed by stopping a particular service, e.g., <code>cdinit.sh stop --force px4sitl_gz_clock</code>.</li>
 </ul>
 <h1 data-number="3" id="troubleshooting"><span class="header-section-number">3</span> Troubleshooting</h1>
 <ul>
 <li><code>protobuf</code> errors like the following could be caused by multiple Gazebo versions installed in parallel: <code>[libprotobuf ERROR   google/protobuf/descriptor_database.cc:121] File already exists in database:   gz/msgs/pointcloud.proto</code></li>
 </ul>
-<h1 data-number="4" id="packages-1"><span class="header-section-number">4</span> Packages</h1>
-<h2 data-number="4.1" id="dependency-graph"><span class="header-section-number">4.1</span> Dependency graph</h2>
+<h1 data-number="4" id="todo"><span class="header-section-number">4</span> TODO</h1>
+<ul>
+<li><code>FindOpticalFlow.cmake</code> is installed in a wrong place.</li>
+<li>Is installation of <code>px4/build/</code> intentional?</li>
+<li><code>CMakeLists.txt</code>, <code>package.xml</code> should not be installed.</li>
+<li>Is <code>spdlog</code> needed?</li>
+</ul>
+<h1 data-number="5" id="packages-1"><span class="header-section-number">5</span> Packages</h1>
+<h2 data-number="5.1" id="dependency-graph"><span class="header-section-number">5.1</span> Dependency graph</h2>
 <p><a href="pkg_dependency_graph.svg"><img src="pkg_dependency_graph.svg" /></a></p>
-<h2 data-number="4.2" id="doxygen-documentation"><span class="header-section-number">4.2</span> Doxygen documentation</h2>
+<h2 data-number="5.2" id="doxygen-documentation"><span class="header-section-number">5.2</span> Doxygen documentation</h2>
 <table>
 <colgroup>
 <col style="width: 33%" />
@@ -194,32 +202,32 @@ px4_msgs                                            as_disable_tests https://git
 </tbody>
 </table>
 <p>Total number of packages: 7</p>
-<h2 data-number="4.3" id="workspace-status"><span class="header-section-number">4.3</span> Workspace status</h2>
+<h2 data-number="5.3" id="workspace-status"><span class="header-section-number">5.3</span> Workspace status</h2>
 <div class="wide">
-<pre><code>tags/0.1.1-0-gf67d45c
+<pre><code>tags/0.1.2-0-g3a947a9
 WSH: &gt;&gt;&gt; status: git sources ---
 Flags: H - version hash mismatch, M - uncommited changes
 name                                                version          actual version                    HM repository
 ----                                                -------          --------------                    -- ----------
 PX4-Autopilot/PX4-Autopilot                         main             heads/main-0-g2e586c4                https://github.com/asherikov/PX4-Autopilot.git
-cdinit                                              master           heads/master-0-ge51e48a              https://github.com/asherikov/cdinit.git
+cdinit                                              master           heads/master-0-g3bb0858              https://github.com/asherikov/cdinit.git
 dds_agent/Micro-XRCE-DDS-Agent/Micro-XRCE-DDS-Agent v2.4.3           tags/v2.4.3-0-g7362281               https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
 dds_agent/spdlog                                    v1.9.2           tags/v1.9.2-0-geb32206               https://github.com/gabime/spdlog.git
 px4_msgs                                            as_disable_tests heads/as_disable_tests-0-g1398c8b    https://github.com/asherikov/px4_msgs.git
 
 WSH:  &lt;&lt;&lt; status: git sources ---</code></pre>
 </div>
-<h1 data-number="5" id="useful-links"><span class="header-section-number">5</span> Useful links</h1>
+<h1 data-number="6" id="useful-links"><span class="header-section-number">6</span> Useful links</h1>
 <ul>
 <li><a href="https://status.openrobotics.org/">ROS online status</a></li>
 <li><a href="https://github.com/ros/rosdistro/blob/master/rosdep/base.yaml">ROSDEP packages</a></li>
 </ul>
-<h2 data-number="5.1" id="ros1"><span class="header-section-number">5.1</span> ROS1</h2>
+<h2 data-number="6.1" id="ros1"><span class="header-section-number">6.1</span> ROS1</h2>
 <ul>
 <li><a href="http://docs.ros.org/en/noetic/api/roscpp/html/">C++ API</a></li>
 <li><a href="https://docs.ros.org/en/noetic/api/catkin/html/dev_guide/generated_cmake_api.html">catkin API</a></li>
 </ul>
-<h2 data-number="5.2" id="ros2"><span class="header-section-number">5.2</span> ROS2</h2>
+<h2 data-number="6.2" id="ros2"><span class="header-section-number">6.2</span> ROS2</h2>
 <ul>
 <li><a href="https://docs.ros2.org/latest/api/rclcpp/namespacerclcpp.html">C++ API</a></li>
 <li><a href="https://docs.ros.org/en/foxy/How-To-Guides/Ament-CMake-Documentation.html">ament</a></li>

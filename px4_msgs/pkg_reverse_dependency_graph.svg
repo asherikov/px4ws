@@ -9,21 +9,21 @@
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 112)">
 <title>graphname</title>
 <polygon fill="white" stroke="transparent" points="-4,4 -4,-112 117.09,-112 117.09,4 -4,4"/>
-<!-- px4_msgs -->
+<!-- px4sitl -->
 <g id="node1" class="node">
-<title>px4_msgs</title>
-<g id="a_node1"><a xlink:href="../px4_msgs/index.html" xlink:title="px4_msgs">
-<ellipse fill="none" stroke="black" cx="56.54" cy="-18" rx="56.59" ry="18"/>
-<text text-anchor="middle" x="56.54" y="-14.3" font-family="Times,serif" font-size="14.00">px4_msgs</text>
+<title>px4sitl</title>
+<g id="a_node1"><a xlink:href="../px4sitl/index.html" xlink:title="px4sitl">
+<ellipse fill="none" stroke="black" cx="56.54" cy="-90" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="56.54" y="-86.3" font-family="Times,serif" font-size="14.00">px4sitl</text>
 </a>
 </g>
 </g>
-<!-- px4sitl -->
+<!-- px4_msgs -->
 <g id="node2" class="node">
-<title>px4sitl</title>
-<g id="a_node2"><a xlink:href="../px4sitl/index.html" xlink:title="px4sitl">
-<ellipse fill="none" stroke="black" cx="56.54" cy="-90" rx="42.49" ry="18"/>
-<text text-anchor="middle" x="56.54" y="-86.3" font-family="Times,serif" font-size="14.00">px4sitl</text>
+<title>px4_msgs</title>
+<g id="a_node2"><a xlink:href="../px4_msgs/index.html" xlink:title="px4_msgs">
+<ellipse fill="none" stroke="black" cx="56.54" cy="-18" rx="56.59" ry="18"/>
+<text text-anchor="middle" x="56.54" y="-14.3" font-family="Times,serif" font-size="14.00">px4_msgs</text>
 </a>
 </g>
 </g>
