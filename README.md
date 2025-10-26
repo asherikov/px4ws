@@ -131,3 +131,11 @@ Troubleshooting
   versions installed in parallel: `[libprotobuf ERROR
   google/protobuf/descriptor_database.cc:121] File already exists in database:
   gz/msgs/pointcloud.proto`
+
+TODO
+====
+
+- `FindOpticalFlow.cmake` is installed in a wrong place.
+- Is installation of `px4/build/` intentional?
+- `CMakeLists.txt`, `package.xml` should not be installed.
+- Is `spdlog` needed?

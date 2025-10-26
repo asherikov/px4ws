@@ -20,6 +20,7 @@ jobs:
             workspace_github_repo: asherikov/px4ws
             workspace_version: ${{ github.sha }}
             cloudsmith_repo: asherikov-aV7/all/ubuntu/noble
-            build_target: px4sitl
+# changes package name from px4ws* to px4sitl*
+#            build_target: px4sitl
         secrets:
             cloudsmith_token: ${{ secrets.CLOUDSMITH_API_KEY }}
