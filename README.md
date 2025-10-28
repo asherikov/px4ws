@@ -123,6 +123,10 @@ working directories.
   termination can also be performed by stopping a particular service, e.g.,
   `cdinit.sh stop --force px4sitl_gz_clock`.
 
+### Service dependency graph
+
+<img src="https://raw.githubusercontent.com/asherikov/px4ws/refs/heads/main/doc/service_graph.svg" alt="service graph" />
+
 
 Troubleshooting
 ===============
