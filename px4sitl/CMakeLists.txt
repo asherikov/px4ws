@@ -8,7 +8,9 @@ execute_process(COMMAND ${Python_EXECUTABLE} -m pip install kconfiglib jinja2 py
 set(CONFIG px4_sitl_default CACHE STRING "" FORCE)
 add_subdirectory(../PX4-Autopilot/PX4-Autopilot ${CMAKE_CURRENT_BINARY_DIR}/PX4-Autopilot)
 
-install(PROGRAMS scripts/px4sitl.sh
+install(PROGRAMS
+    scripts/px4sitl.sh
+    scripts/qgroundcontrol.sh
     DESTINATION bin
 )
 

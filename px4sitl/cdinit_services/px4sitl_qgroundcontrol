@@ -1,0 +1,12 @@
+type = process
+command = qgroundcontrol.sh $1
+
+stop-timeout = 20.0
+
+log-type = pipe
+
+depends-on = px4sitl_px4@$1
+depends-ms = cdinit_log@px4sitl_qgroundcontrol@$1
+
+options = always-chain
+chain-to = cdinit_shutdown

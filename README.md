@@ -131,10 +131,12 @@ Troubleshooting
   versions installed in parallel: `[libprotobuf ERROR
   google/protobuf/descriptor_database.cc:121] File already exists in database:
   gz/msgs/pointcloud.proto`
+- PX4 fails during automatic takeoff with "Disarmed by auto preflight
+  disarming": make sure that unused parameters in vehicle command message are
+  set to NaN.
 
 TODO
 ====
 
-- `FindOpticalFlow.cmake` is installed in a wrong place.
 - Is installation of `px4/build/` intentional?
 - `CMakeLists.txt`, `package.xml` should not be installed.

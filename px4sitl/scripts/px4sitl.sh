@@ -10,14 +10,18 @@ PX4SITL_DRONE_MODELS=()
 INSTALL_ROOT=$(realpath "$(dirname "$0")/../")
 PX4SITL_SIM_RESOURCES=${INSTALL_ROOT}/px4/Tools/simulation/gazebo-classic/sitl_gazebo-classic/
 
-SERVICE=px4sitl_gz_gui
+GZ_SERVICE=px4sitl_gz_gui
+DRONE_SERVICE=px4sitl_qgroundcontrol
 
 while [[ $# -gt 0 ]]
 do
     case $1 in
-        -H|--headless)      SERVICE="px4sitl_ros";                      shift;;
         -w|--world)         PX4SITL_WORLD_SDF_NAME=$2;                  shift; shift;;
         -l|--list_worlds)   ls -1 "${PX4SITL_SIM_RESOURCES}/worlds";    exit 0;;
+        -H|--headless)
+            GZ_SERVICE="px4sitl_ros";
+            DRONE_SERVICE="px4sitl_px4"
+            shift;;
         -d|--drone)
             PX4SITL_DRONE_MODELS+=("$2");
             PX4SITL_DRONE_POSES+=("$3");
@@ -33,7 +37,7 @@ then
 fi
 
 
-cdinit.sh start "${SERVICE}" \
+cdinit.sh start "${GZ_SERVICE}" \
     PATH="${PATH}:${INSTALL_ROOT}/px4/bin" \
     GZ_SIM_RESOURCE_PATH="${GZ_SIM_RESOURCE_PATH}:${PX4SITL_SIM_RESOURCES}/models:${PX4SITL_SIM_RESOURCES}/worlds" \
     GZ_SIM_SYSTEM_PLUGIN_PATH="${GZ_SIM_SYSTEM_PLUGIN_PATH}:${INSTALL_ROOT}/lib/px4_gz_plugins/" \
@@ -49,7 +53,7 @@ do
 #PX4_HOME_ALT=101
 #PX4_SIM_SPEED_FACTOR=2
 
-    cdinit.sh start "px4sitl_px4@${INSTANCE}" \
+    cdinit.sh start "${DRONE_SERVICE}@${INSTANCE}" \
         PX4_GZ_WORLD="${PX4SITL_WORLD_SDF_NAME}" \
         PX4_GZ_MODEL_POSE="${PX4SITL_DRONE_POSES[${INSTANCE}]}" \
         PX4_SYS_AUTOSTART="${DRONE}"
