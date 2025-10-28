@@ -1,0 +1,9 @@
+type = process
+command = ros2 run px4_offboard_demo_py demo_node --ros-args -r __ns:=/px4_drone_$1 -p use_sim_time:=true
+
+stop-timeout = 20.0
+
+options = shares-console
+
+depends-on = px4sitl_px4@$1
+depends-ms = cdinit_log@px4_offboard_demo_py_node@$1
