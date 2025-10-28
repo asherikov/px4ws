@@ -13,5 +13,5 @@ repositories:
         version: v2.4.3
     px4_msgs:
         type: git
-        url: https://github.com/asherikov/px4_msgs.git
-        version: as_disable_tests
+        url: https://github.com/PX4/px4_msgs.git
+        version: main
