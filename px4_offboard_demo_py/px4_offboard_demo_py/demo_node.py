@@ -26,11 +26,20 @@ class PX4OffboardDemoNode(Node):
         self.get_logger().info('PX4 Offboard Demo Node initialized')
         # Initialize takeoff_started for backward compatibility
         self.takeoff_started = False
+        # Flag to indicate if state machine has completed
+        self.completed = False
 
 
     def timer_callback(self):
         """Timer callback that delegates to the state machine."""
-        self.state_machine.run_state_machine()
+        if self.state_machine.run_state_machine():
+            self.get_logger().info('State machine sequence completed, shutting down node')
+            # Cancel the timer to stop further callbacks
+            self.timer.cancel()
+            # Set completion flag to signal main function to shut down
+            self.completed = True
+            # Destroy the node to clean up resources
+            self.destroy_node()
 
 
 def main(args=None):
@@ -40,11 +49,18 @@ def main(args=None):
     demo_node = PX4OffboardDemoNode()
 
     try:
-        rclpy.spin(demo_node)
+        # Use spin_once in a loop to check for completion
+        while rclpy.ok() and not getattr(demo_node, 'completed', False):
+            rclpy.spin_once(demo_node, timeout_sec=0.1)
     except KeyboardInterrupt:
         demo_node.get_logger().info('Interrupted by user')
     finally:
-        demo_node.destroy_node()
+        # Only try to destroy node if it's not already destroyed
+        if demo_node.handle is not None:
+            demo_node.destroy_node()
+        # Only shutdown if rclpy is still ok
+        if rclpy.ok():
+            rclpy.try_shutdown()
 
 
 if __name__ == '__main__':

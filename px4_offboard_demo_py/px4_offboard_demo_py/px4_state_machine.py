@@ -72,6 +72,9 @@ class PX4TakeoffStateMachine:
             self.node.get_logger().info(f'FSM: Switching from "{self.state_sequence[self.current_state_index]}" to "{self.state_sequence[self.current_state_index+1]}"')
             self.current_state_index += 1
 
+        # Return True if we've reached the final state and completed the sequence
+        return self.current_state_index >= len(self.state_sequence) - 1 and current_state_name == 'finished'
+
     def _handle_waiting_for_status(self, current_time_sec):
         """Handle the waiting_for_status state, return whether a transition should occur."""
         if self.px4_comm.vehicle_status:
