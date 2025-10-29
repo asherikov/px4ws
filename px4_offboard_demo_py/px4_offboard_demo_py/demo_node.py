@@ -45,7 +45,6 @@ def main(args=None):
         demo_node.get_logger().info('Interrupted by user')
     finally:
         demo_node.destroy_node()
-        rclpy.shutdown()
 
 
 if __name__ == '__main__':
