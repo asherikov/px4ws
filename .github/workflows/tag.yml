@@ -9,7 +9,7 @@ jobs:
         with:
             distro: noble
             version: ${{ github.ref_name }}
-#            push: false
+            push: false
         permissions:
             contents: write
 
@@ -20,7 +20,6 @@ jobs:
             workspace_github_repo: asherikov/px4ws
             workspace_version: ${{ github.sha }}
             cloudsmith_repo: asherikov-aV7/all/ubuntu/noble
-# changes package name from px4ws* to px4sitl*
-#            build_target: px4sitl
+            build_target: "PKG='px4sitl px4_offboard_demo_py'"
         secrets:
             cloudsmith_token: ${{ secrets.CLOUDSMITH_API_KEY }}

@@ -15,3 +15,4 @@ jobs:
             workspace_github_repo: asherikov/px4ws
             workspace_version: ${{ github.sha }}
             profiles: '["static_checks", "reldebug", "deb"]'
+            build_target: "PKG='px4sitl px4_offboard_demo_py'"
