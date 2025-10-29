@@ -116,6 +116,10 @@ class PX4Communication:
         """Send takeoff command to vehicle."""
         self.send_command(VehicleCommand.VEHICLE_CMD_NAV_TAKEOFF, param7=altitude)
 
+    def send_landing_command(self):
+        """Send landing command to vehicle."""
+        self.send_command(VehicleCommand.VEHICLE_CMD_NAV_LAND)
+
     def send_zero_velocity_setpoint(self):
         """Send zero velocity setpoint."""
         trajectory_setpoint = TrajectorySetpoint()

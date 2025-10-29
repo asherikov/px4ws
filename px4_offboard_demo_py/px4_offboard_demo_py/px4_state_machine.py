@@ -106,14 +106,25 @@ class PX4TakeoffStateMachine:
             if self.px4_comm.vehicle_status.nav_state in [VehicleStatus.NAVIGATION_STATE_AUTO_LOITER,
                                                           VehicleStatus.NAVIGATION_STATE_POSCTL]:
                 self.node.get_logger().info('Takeoff completed')
-                self.state = 'completed'
-                self.node.get_logger().info('Takeoff sequence completed successfully')
+                self.state = 'performing_landing'
+                self.node.get_logger().info('Takeoff sequence completed successfully, initiating landing')
             elif self.px4_comm.vehicle_status.nav_state != VehicleStatus.NAVIGATION_STATE_AUTO_TAKEOFF:
                 # Send takeoff command
                 self.px4_comm.send_takeoff_command(10.0)
 
-        elif self.state == 'completed':
-            # After takeoff is completed, continue sending zero velocity`
+        elif self.state == 'performing_landing':
+            # Send landing command and monitor landing progress
+            self.px4_comm.set_offboard_mode()
+
+            # Check if we're already in landing state, if not, send landing command
+            if self.px4_comm.vehicle_status.nav_state != VehicleStatus.NAVIGATION_STATE_AUTO_LAND:
+                self.px4_comm.send_landing_command()
+            else:
+                self.node.get_logger().info('Landing command has been sent')
+                self.state = 'finished'
+
+        elif self.state == 'finished':
+            # Final state after landing is complete
+            # Continue sending zero velocity to maintain offboard control until node stops
             # self.px4_comm.send_zero_velocity_setpoint()
             # self.px4_comm.set_offboard_mode()
-            self.node.get_logger().log('Takeoff completed, continuing to send zero velocity commands', rclpy.logging.LoggingSeverity.INFO, throttle_duration_sec=2.0)
