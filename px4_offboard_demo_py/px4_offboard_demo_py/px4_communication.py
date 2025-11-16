@@ -1,5 +1,5 @@
 """Handles all communication with the PX4 autopilot using px4_msgs."""
-from px4_msgs.msg import OffboardControlMode, TrajectorySetpoint, VehicleCommand, VehicleStatus
+from px4_msgs.msg import OffboardControlMode, TrajectorySetpoint, VehicleCommand, VehicleOdometry, VehicleStatus
 
 from rclpy.qos import DurabilityPolicy, HistoryPolicy, QoSProfile, ReliabilityPolicy
 
@@ -18,7 +18,9 @@ class PX4Communication:
 
         # Initialize variables
         self.vehicle_status = None
+        self.vehicle_odometry = None
         self._last_nav_state = None
+        self._last_odom_print_time = 0  # For tracking when to print position
 
         px4_qos = QoSProfile(
             reliability=ReliabilityPolicy.BEST_EFFORT,
@@ -27,16 +29,22 @@ class PX4Communication:
             depth=1
         )
 
-        self.vehicle_command_publisher = self.node.create_publisher(
-            VehicleCommand, 'fmu/in/vehicle_command', px4_qos)
-        self.offboard_control_mode_publisher = self.node.create_publisher(
-            OffboardControlMode, 'fmu/in/offboard_control_mode', px4_qos)
-        self.trajectory_setpoint_publisher = self.node.create_publisher(
-            TrajectorySetpoint, 'fmu/in/trajectory_setpoint', px4_qos)
+        # Group communication interfaces
+        self.publishers = {
+            'vehicle_command': self.node.create_publisher(
+                VehicleCommand, 'fmu/in/vehicle_command', px4_qos),
+            'offboard_control_mode': self.node.create_publisher(
+                OffboardControlMode, 'fmu/in/offboard_control_mode', px4_qos),
+            'trajectory_setpoint': self.node.create_publisher(
+                TrajectorySetpoint, 'fmu/in/trajectory_setpoint', px4_qos)
+        }
 
-        self.vehicle_status_subscriber = self.node.create_subscription(
-            VehicleStatus, 'fmu/out/vehicle_status_v1', self.vehicle_status_callback,
-            px4_qos)
+        self.subscribers = {
+            'vehicle_status': self.node.create_subscription(
+                VehicleStatus, 'fmu/out/vehicle_status_v1', self.vehicle_status_callback, px4_qos),
+            'vehicle_odometry': self.node.create_subscription(
+                VehicleOdometry, 'fmu/out/vehicle_odometry', self.vehicle_odometry_callback, px4_qos)
+        }
 
     def vehicle_status_callback(self, msg):
         """Update vehicle status."""
@@ -57,6 +65,41 @@ class PX4Communication:
             current_state = nav_states.get(msg.nav_state, f'UNKNOWN({msg.nav_state})')
             self.node.get_logger().info(f'Navigation state changed to: {current_state}')
         self._last_nav_state = msg.nav_state
+
+    def vehicle_odometry_callback(self, msg):
+        """Update vehicle odometry."""
+        self.vehicle_odometry = msg
+
+    def should_print_position(self, current_time_sec, print_interval=1.0):
+        """
+        Check if we should print the position based on the time interval.
+
+        Args:
+            current_time_sec: Current time in seconds
+            print_interval: Interval in seconds between prints (default 1.0)
+
+        Returns:
+            bool: True if position should be printed
+        """
+        if current_time_sec - self._last_odom_print_time >= print_interval:
+            self._last_odom_print_time = current_time_sec
+            return True
+        return False
+
+    def get_current_position(self):
+        """
+        Get the current position from vehicle odometry.
+
+        Returns:
+            tuple: (x, y, z) position if available, otherwise None
+        """
+        if self.vehicle_odometry is not None:
+            # The position is usually in the X, Y, Z fields of the pose
+            x = self.vehicle_odometry.position[0]
+            y = self.vehicle_odometry.position[1]
+            z = self.vehicle_odometry.position[2]
+            return (x, y, z)
+        return None
 
     # pylint: disable=unknown-option-value too-many-positional-arguments too-many-arguments
     def send_command(self, command,
@@ -79,7 +122,7 @@ class PX4Communication:
         vehicle_command.source_component = 1
         vehicle_command.from_external = True
 
-        self.vehicle_command_publisher.publish(vehicle_command)
+        self.publishers['vehicle_command'].publish(vehicle_command)
 
     def arm_vehicle(self):
         """Send arm command to vehicle."""
@@ -98,7 +141,7 @@ class PX4Communication:
         offboard_control_mode.thrust_and_torque = False
         offboard_control_mode.direct_actuator = False
 
-        self.offboard_control_mode_publisher.publish(offboard_control_mode)
+        self.publishers['offboard_control_mode'].publish(offboard_control_mode)
 
     def send_offboard_mode_command(self):
         """Send VEHICLE_CMD_DO_SET_MODE command to switch to offboard mode."""
@@ -142,7 +185,7 @@ class PX4Communication:
         trajectory_setpoint.yaw = float('nan')  # Don't control yaw
         trajectory_setpoint.yawspeed = float('nan')
 
-        self.trajectory_setpoint_publisher.publish(trajectory_setpoint)
+        self.publishers['trajectory_setpoint'].publish(trajectory_setpoint)
 
     def send_velocity_setpoint(self, velocity):
         """Send constant velocity setpoint."""
@@ -166,4 +209,5 @@ class PX4Communication:
         trajectory_setpoint.yaw = float('nan')  # Don't control yaw
         trajectory_setpoint.yawspeed = float('nan')
 
-        self.trajectory_setpoint_publisher.publish(trajectory_setpoint)
+        self.publishers['trajectory_setpoint'].publish(trajectory_setpoint)
+
