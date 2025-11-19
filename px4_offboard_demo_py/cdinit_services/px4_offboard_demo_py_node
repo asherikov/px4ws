@@ -7,3 +7,4 @@ options = shares-console
 
 depends-on = px4sitl_px4@$1
 depends-ms = cdinit_log@px4_offboard_demo_py_node@$1
+depends-ms = cdinit_ros2_bag
