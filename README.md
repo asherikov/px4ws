@@ -32,19 +32,6 @@ which serve as a showcase of <https://github.com/asherikov/cdinit>.
 Workspace documentation is at <http://www.sherikov.net/px4ws/>.
 
 
-Packages
---------
-```
-PX4-Autopilot/PX4-Autopilot                         main             https://github.com/asherikov/PX4-Autopilot.git
-cdinit                                              master           https://github.com/asherikov/cdinit.git
-dds_agent/Micro-XRCE-DDS-Agent/Micro-XRCE-DDS-Agent v2.4.3           https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
-dds_agent/spdlog                                    v1.9.2           https://github.com/gabime/spdlog.git
-px4_msgs                                            as_disable_tests https://github.com/asherikov/px4_msgs.git
-```
-`PX4-Autopilot` and `Micro-XRCE-DDS-Agent` are build using proxy packages in
-order to apply a few `cmake` tweaks
-
-
 Usage
 =====
 
