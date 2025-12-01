@@ -12,7 +12,7 @@
 
     <buildtool_depend>cmake</buildtool_depend>
 
-    <exec_depend>cdinit_manager</exec_depend>
+    <exec_depend>cdinit</exec_depend>
     <exec_depend>dds_agent</exec_depend>
     <exec_depend>px4_msgs</exec_depend>
     <exec_depend>ros_gz</exec_depend>

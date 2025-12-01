@@ -1,0 +1,29 @@
+# Configuration parameters for PX4 Offboard Demo
+
+# Timer settings
+timer_frequency: 50.0          # Hz - frequency of timer callback
+timeout_sec: 0.1               # seconds - timeout for spin_once
+
+# Offboard mode settings
+offboard_set_interval: 0.2     # seconds - interval to periodically try switching to offboard mode
+
+# Arming settings
+arm_command_interval: 1.0      # seconds - interval between arm commands
+
+# Takeoff settings
+takeoff_altitude: 10.0         # meters - altitude for takeoff command
+
+# Velocity command settings
+velocity_commands:
+  forward:
+    duration: 4.0              # seconds - duration for forward velocity
+    velocity: [2.0, 0.0, 0.0]  # m/s - velocity in x, y, z directions
+  zero:
+    duration: 2.0              # seconds - duration for zero velocity
+    velocity: [0.0, 0.0, 0.0]  # m/s - velocity in x, y, z directions
+  backward:
+    duration: 4.0              # seconds - duration for backward velocity
+    velocity: [-2.0, 0.0, 0.0] # m/s - velocity in x, y, z directions
+
+# Position printing
+position_print_interval: 1.0   # seconds - interval between position prints

@@ -9,6 +9,7 @@
 
   <depend>rclpy</depend>
   <depend>px4_msgs</depend>
+  <depend>ament_index_python</depend>
 
   <exec_depend>ros2launch</exec_depend>
   <exec_depend>cdinit_ros2</exec_depend>

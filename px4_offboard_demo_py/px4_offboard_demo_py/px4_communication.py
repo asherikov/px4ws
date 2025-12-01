@@ -70,7 +70,7 @@ class PX4Communication:
         """Update vehicle odometry."""
         self.vehicle_odometry = msg
 
-    def should_print_position(self, current_time_sec, print_interval=1.0):
+    def should_print_position(self, current_time_sec, print_interval=None):
         """
         Check if we should print the position based on the time interval.
 
@@ -81,6 +81,9 @@ class PX4Communication:
         Returns:
             bool: True if position should be printed
         """
+        if print_interval is None:
+            print_interval = 1.0  # default value
+
         if current_time_sec - self._last_odom_print_time >= print_interval:
             self._last_odom_print_time = current_time_sec
             return True

@@ -1,7 +1,13 @@
 """ROS2 node that interacts with PX4-Autopilot using px4_msgs."""
 
+import os
+
+import ament_index_python
+
 import rclpy
 from rclpy.node import Node
+
+import yaml
 
 from .px4_communication import PX4Communication
 from .px4_state_machine import PX4TakeoffStateMachine
@@ -14,14 +20,33 @@ class PX4OffboardDemoNode(Node):
         """PX4OffboardDemoNode."""
         super().__init__('demo_node')
 
+        # Load configuration from YAML file
+        # First try to find config file using ament resource system
+        config_path = None
+        try:
+            package_share_path = ament_index_python.packages.get_package_share_directory('px4_offboard_demo_py')
+            config_path = os.path.join(package_share_path, 'config', 'demo_config.yaml')
+        except (ImportError, ament_index_python.packages.PackageNotFoundError):
+            # Fallback to the old method if ament_index_python is not available
+            config_path = os.path.join(os.path.dirname(__file__), 'config', 'demo_config.yaml')
+
+        try:
+            with open(config_path, 'r', encoding='utf-8') as file:
+                self.config = yaml.safe_load(file)
+            self.get_logger().info(f'Configuration loaded from: {config_path}')
+        except FileNotFoundError as exception:
+            self.get_logger().error(f'Configuration file not found: {config_path}')
+            raise RuntimeError(f'Configuration file not found: {config_path}') from exception
+
         # Initialize PX4 communication handler (includes subscriptions)
         self.px4_comm = PX4Communication(self)
 
-        # Initialize state machine
-        self.state_machine = PX4TakeoffStateMachine(self, self.px4_comm)
+        # Initialize state machine with configuration
+        self.state_machine = PX4TakeoffStateMachine(self, self.px4_comm, self.config)
 
-        # Create timer for sending messages (50 Hz to send constant zero velocity)
-        self.timer = self.create_timer(0.02, self.timer_callback)  # 50 Hz for faster updates
+        # Create timer for sending messages based on config
+        timer_period = 1.0 / self.config['timer_frequency']  # Convert frequency to period
+        self.timer = self.create_timer(timer_period, self.timer_callback)
 
         self.get_logger().info('PX4 Offboard Demo Node initialized')
         # Initialize takeoff_started for backward compatibility
@@ -49,9 +74,9 @@ def main(args=None):
     demo_node = PX4OffboardDemoNode()
 
     try:
-        # Use spin_once in a loop to check for completion
+        # Use spin_once in a loop to check for completion, using timeout from config
         while rclpy.ok() and not getattr(demo_node, 'completed', False):
-            rclpy.spin_once(demo_node, timeout_sec=0.1)
+            rclpy.spin_once(demo_node, timeout_sec=demo_node.config['timeout_sec'])
     except KeyboardInterrupt:
         demo_node.get_logger().info('Interrupted by user')
     finally:

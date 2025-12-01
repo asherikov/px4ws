@@ -5,16 +5,20 @@ from px4_msgs.msg import VehicleStatus
 class PX4TakeoffStateMachine:
     """PX4TakeoffStateMachine."""
 
-    def __init__(self, node, px4_comm):
+    # pylint: disable=too-many-instance-attributes
+
+    def __init__(self, node, px4_comm, config=None):
         """
         Initialize the state machine.
 
         Args:
             node: The ROS2 node
             px4_comm: The PX4 communication handler
+            config: Configuration dictionary loaded from YAML file
         """
         self.node = node
         self.px4_comm = px4_comm
+        self.config = config or {}
 
 
         # Define the state sequence for the complete flight operation
@@ -97,7 +101,7 @@ class PX4TakeoffStateMachine:
                 self.state_variables['enter_offboard_mode'] = {
                     'start_time': 0,
                     'last_offboard_set_time': 0,
-                    'offboard_set_interval': 0.2
+                    'offboard_set_interval': self.config['offboard_set_interval']
                 }
             # Set the start time for the offboard transition in the next state
             offboard_vars = self.state_variables['enter_offboard_mode']
@@ -117,7 +121,7 @@ class PX4TakeoffStateMachine:
             self.state_variables[current_state] = {
                 'start_time': 0,
                 'last_offboard_set_time': 0,
-                'offboard_set_interval': 0.2  # seconds (200ms) to periodically try switching to offboard mode
+                'offboard_set_interval': self.config['offboard_set_interval']  # seconds to periodically try switching to offboard mode
             }
 
         offboard_vars = self.state_variables[current_state]
@@ -127,20 +131,14 @@ class PX4TakeoffStateMachine:
             offboard_vars['start_time'] = current_time_sec
             offboard_vars['last_offboard_set_time'] = current_time_sec
 
-        last_offboard_set_time = offboard_vars['last_offboard_set_time']
-
         # Continue sending zero velocity commands while waiting for mode switch
         self.px4_comm.send_zero_velocity_setpoint()
         self.px4_comm.set_offboard_mode()  # Continue publishing offboard mode
 
         # Re-send VEHICLE_CMD_DO_SET_MODE command periodically
-        offboard_set_interval = offboard_vars['offboard_set_interval']  # Get interval from state variables
-        if current_time_sec - last_offboard_set_time > offboard_set_interval:
+        if current_time_sec - offboard_vars['last_offboard_set_time'] > offboard_vars['offboard_set_interval']:
             self.px4_comm.send_offboard_mode_command()
-            last_offboard_set_time = current_time_sec  # Update the time when command is sent
-
-        # Update the stored time
-        offboard_vars['last_offboard_set_time'] = last_offboard_set_time
+            offboard_vars['last_offboard_set_time'] = current_time_sec  # Update the time when command is sent
 
         # Check if the vehicle has switched to offboard mode
         success = (self.px4_comm.vehicle_status
@@ -166,9 +164,9 @@ class PX4TakeoffStateMachine:
         if self.px4_comm.vehicle_status.arming_state == VehicleStatus.ARMING_STATE_ARMED:
             return True
 
-        # Re-send arm command periodically with proper throttling
+        # Re-send arm command periodically with proper throttling using config
         last_arm_time = self.state_variables['arming_vehicle']['last_arm_command_time']
-        if last_arm_time is None or current_time_sec - last_arm_time >= 1.0:  # Every second
+        if last_arm_time is None or current_time_sec - last_arm_time >= self.config['arm_command_interval']:
             self.px4_comm.arm_vehicle()
             self.state_variables['arming_vehicle']['last_arm_command_time'] = current_time_sec  # Update the time when command is sent
 
@@ -186,8 +184,8 @@ class PX4TakeoffStateMachine:
             return True
 
         if self.px4_comm.vehicle_status.nav_state != VehicleStatus.NAVIGATION_STATE_AUTO_TAKEOFF:
-            # Send takeoff command
-            self.px4_comm.send_takeoff_command(10.0)
+            # Send takeoff command with altitude from config
+            self.px4_comm.send_takeoff_command(self.config['takeoff_altitude'])
 
         return False
 
@@ -210,15 +208,11 @@ class PX4TakeoffStateMachine:
             vel_vars['start_time'] = current_time_sec
             vel_vars['phase_start_time'] = current_time_sec
 
-        # Define parameters for the velocity pattern
-        forward_duration = 4.0  # seconds for forward velocity
-        forward_velocity = [2.0, 0.0, 0.0]  # m/s in x, y, z directions
-
         # Send forward velocity command
-        self.px4_comm.send_velocity_setpoint(forward_velocity)
+        self.px4_comm.send_velocity_setpoint(self.config['velocity_commands']['forward']['velocity'])
 
-        # Print position every second while executing velocity commands
-        if self.px4_comm.should_print_position(current_time_sec):
+        # Print position based on interval from config while executing velocity commands
+        if self.px4_comm.should_print_position(current_time_sec, self.config['position_print_interval']):
             position = self.px4_comm.get_current_position()
             if position:
                 x, y, z = position
@@ -227,7 +221,7 @@ class PX4TakeoffStateMachine:
                 self.node.get_logger().info('Position unavailable')
 
         elapsed_time = current_time_sec - vel_vars['phase_start_time']
-        if elapsed_time >= forward_duration:
+        if elapsed_time >= self.config['velocity_commands']['forward']['duration']:
             return True
 
         return False
@@ -251,15 +245,11 @@ class PX4TakeoffStateMachine:
             vel_vars['start_time'] = current_time_sec
             vel_vars['phase_start_time'] = current_time_sec
 
-        # Define parameters for the velocity pattern
-        zero_duration = 2.0     # seconds for zero velocity
-        zero_velocity = [0.0, 0.0, 0.0]     # m/s
-
         # Send zero velocity command
-        self.px4_comm.send_velocity_setpoint(zero_velocity)
+        self.px4_comm.send_velocity_setpoint(self.config['velocity_commands']['zero']['velocity'])
 
-        # Print position every second while executing velocity commands
-        if self.px4_comm.should_print_position(current_time_sec):
+        # Print position based on interval from config while executing velocity commands
+        if self.px4_comm.should_print_position(current_time_sec, self.config['position_print_interval']):
             position = self.px4_comm.get_current_position()
             if position:
                 x, y, z = position
@@ -268,7 +258,7 @@ class PX4TakeoffStateMachine:
                 self.node.get_logger().info('Position unavailable')
 
         elapsed_time = current_time_sec - vel_vars['phase_start_time']
-        if elapsed_time >= zero_duration:
+        if elapsed_time >= self.config['velocity_commands']['zero']['duration']:
             return True
 
         return False
@@ -292,15 +282,11 @@ class PX4TakeoffStateMachine:
             vel_vars['start_time'] = current_time_sec
             vel_vars['phase_start_time'] = current_time_sec
 
-        # Define parameters for the velocity pattern
-        backward_duration = 4.0  # seconds for backward velocity
-        backward_velocity = [-2.0, 0.0, 0.0]  # m/s in x, y, z directions
-
         # Send backward velocity command
-        self.px4_comm.send_velocity_setpoint(backward_velocity)
+        self.px4_comm.send_velocity_setpoint(self.config['velocity_commands']['backward']['velocity'])
 
-        # Print position every second while executing velocity commands
-        if self.px4_comm.should_print_position(current_time_sec):
+        # Print position based on interval from config while executing velocity commands
+        if self.px4_comm.should_print_position(current_time_sec, self.config['position_print_interval']):
             position = self.px4_comm.get_current_position()
             if position:
                 x, y, z = position
@@ -309,7 +295,7 @@ class PX4TakeoffStateMachine:
                 self.node.get_logger().info('Position unavailable')
 
         elapsed_time = current_time_sec - vel_vars['phase_start_time']
-        if elapsed_time >= backward_duration:
+        if elapsed_time >= self.config['velocity_commands']['backward']['duration']:
             return True
 
         return False
