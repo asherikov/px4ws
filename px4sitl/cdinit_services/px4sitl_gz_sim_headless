@@ -1,0 +1,15 @@
+type = process
+working-dir = ${CDINIT_INSTALL_ROOT_PACKAGE_px4sitl}/px4/Tools/simulation/
+command = env \
+    GZ_SIM_SERVER_CONFIG_PATH=${CDINIT_INSTALL_ROOT_PACKAGE_px4sitl}/px4/Tools/simulation/gz/server.config \
+    GZ_SIM_SYSTEM_PLUGIN_PATH=${GZ_SIM_SYSTEM_PLUGIN_PATH}:${CDINIT_INSTALL_ROOT_PACKAGE_px4sitl}/lib/px4_gz_plugins/ \
+    GZ_SIM_RESOURCE_PATH=${GZ_SIM_RESOURCE_PATH}:${CDINIT_INSTALL_ROOT_PACKAGE_px4sitl}/px4/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models:${CDINIT_INSTALL_ROOT_PACKAGE_px4sitl}/px4/Tools/simulation/gazebo-classic/sitl_gazebo-classic/worlds \
+    gz sim --verbose 4 -r -s ./gazebo-classic/sitl_gazebo-classic/worlds/${PX4SITL_WORLD_SDF_NAME}.sdf
+
+stop-timeout = 20.0
+
+log-type = pipe
+depends-ms = cdinit_log@px4sitl_gz_sim_headless
+
+options = always-chain
+chain-to = cdinit_shutdown_debug

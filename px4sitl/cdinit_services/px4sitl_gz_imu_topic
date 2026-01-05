@@ -1,0 +1,8 @@
+type = process
+command = sh -c "gz topic -e --topic /world/default/model/x500_0/link/base_link/sensor/imu_sensor/imu | grep 'linear_acceleration ' -A 3 | grep 'z:'"
+
+stop-timeout = 20.0
+
+log-type = pipe
+depends-on = px4sitl_gz_sim_headless
+depends-ms = cdinit_log@px4sitl_gz_imu_topic

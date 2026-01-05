@@ -56,59 +56,62 @@ Binary package
 Running
 -------
 
-- Run `px4sitl.sh -w walls -d 4001 "0,1.0,0,0,0,0" -d 4004 "0,-5.0,0,0,0,0"`
-  where `-w` specifies world ('default' if not set), `-d` specifies a drone
-  model id and its location (x,y,z,r,p,y). Numerical ids can be found in a
-  table at <https://docs.px4.io/main/en/sim_gazebo_gz/>.
-- `px4sitl.sh` also supports headless mode, which is enabled by passing `-H`
-  flag.
-- Terminate by closing Gazebo gui, or with `cdinit.sh shutdown`.
+- Start services:
+
+```
+cdinit.sh start px4sitl_ros@gui px4sitl_drone_x500@gui PX4SITL_WORLD_SDF_NAME=default
+```
+
+- Terminate by closing Gazebo gui, or with `cdinit.sh shutdown`. Since all
+  processes are required, termination can also be performed by stopping a
+  particular service, e.g., `cdinit.sh stop --force px4sitl_gz_clock`.
 
 cdinit services
 ---------------
 
 All components are started using `dinit` service files located in
-`px4sitl/cdinit_services/`, see <https://github.com/davmac314/dinit>,
-<https://github.com/asherikov/cdinit> provides a cmake wrapper for `dinit` and
-helper scripts. Shell scripts are primarily used to setup environment and
-working directories.
+`px4sitl/cdinit_services/`, see <https://github.com/asherikov/cdinit> for more
+information.
 
 ### Example
 
-- Start `px4sitl.sh -w walls -d 4001 "0,1.0,0,0,0,0" -d 4004 "0,-5.0,0,0,0,0"`
+- Start services as described above.
 - List services `cdinit.sh list | sort` to get something like
 ```
 # dummy "boot" service
 [[+]     ] cdinit_main
+# brings up a x500 drone
+[[+]     ] px4sitl_drone_x500@gui
+# brings up gazebo (with gui) and ROS bridge
+[[+]     ] px4sitl_ros@gui
+# logging services
+[{+}     ] cdinit_log@px4sitl_gz_sim_gui
+[{+}     ] cdinit_log@px4sitl_gz_sim_headless
+[{+}     ] cdinit_log@px4sitl_gz_wait
+[{+}     ] cdinit_log@px4sitl_px4_gui@.../px4sitl/config/x500.drone
+[{+}     ] cdinit_log@px4sitl_px4_headless@.../px4sitl/config/x500.drone
+[{+}     ] cdinit_log@px4sitl_ros_dds_agent
+[{+}     ] cdinit_log@px4sitl_ros_gz_clock
+[{+}     ] cdinit_sessionsync
+# brings up Gazebo
+[{+}     ] px4sitl_gz_sim@gui
 # Gazebo gui
-[[+]     ] px4sitl_gz_gui (pid: XXX)
-# PX4 instances, number after @ symbol is a corresponding system id
-[[+]     ] px4sitl_px4@0 (pid: XXX)
-[[+]     ] px4sitl_px4@1 (pid: XXX)
-# logging services, cdinit_log helper adds timestamps
-[{+}     ] cdinit_log@px4sitl_dds_agent (pid: XXX)
-[{+}     ] cdinit_log@px4sitl_gz_clock (pid: XXX)
-[{+}     ] cdinit_log@px4sitl_gz_gui (pid: XXX)
-[{+}     ] cdinit_log@px4sitl_gz_headless (pid: XXX)
-[{+}     ] cdinit_log@px4sitl_gz_wait (pid: XXX)
-[{+}     ] cdinit_log@px4sitl_px4@0 (pid: XXX)
-[{+}     ] cdinit_log@px4sitl_px4@1 (pid: XXX)
-# Micro-XRCE-DDS-Agent bridging PX4 and ros2
-[{+}     ] px4sitl_dds_agent (pid: XXX)
-# Gazebo -> ROS2 simulation clock bridge
-[{+}     ] px4sitl_gz_clock (pid: XXX)
+[{+}     ] px4sitl_gz_sim_gui
 # Gazebo simulation core
-[{+}     ] px4sitl_gz_headless (pid: XXX)
+[{+}     ] px4sitl_gz_sim_headless
 # Helper service which waits for Gazebo to start
 [{+}     ] px4sitl_gz_wait
-# Dummy "master" service
-[{+}     ] px4sitl_ros
+# QGroundControl
+[{+}     ] px4sitl_px4_gui@.../px4sitl/config/x500.drone
+# PX4 instance with corresponding configuration file
+[{+}     ] px4sitl_px4_headless@.../px4sitl/config/x500.drone
+# Micro-XRCE-DDS-Agent bridging PX4 and ros2
+[{+}     ] px4sitl_ros_dds_agent
+# Gazebo -> ROS2 simulation clock bridge
+[{+}     ] px4sitl_ros_gz_clock
 ```
-- Location of the log files depends on environment variables, e.g.,
-  `ROS_LOG_DIR` and is printed on startup.
-- Terminate using `cdinit.sh shutdown`. Since all processes are required,
-  termination can also be performed by stopping a particular service, e.g.,
-  `cdinit.sh stop --force px4sitl_gz_clock`.
+- Logs are located in cdinit session root directory printed on startup, it
+  depends on environment variables, e.g., `ROS_LOG_DIR`.
 
 ### Service dependency graph
 

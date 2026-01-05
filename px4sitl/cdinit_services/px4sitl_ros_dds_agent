@@ -5,7 +5,7 @@ stop-timeout = 20.0
 
 log-type = pipe
 
-depends-ms = cdinit_log@px4sitl_dds_agent
+depends-ms = cdinit_log@px4sitl_ros_dds_agent
 
 options = always-chain
-chain-to = cdinit_shutdown
+chain-to = cdinit_shutdown_debug

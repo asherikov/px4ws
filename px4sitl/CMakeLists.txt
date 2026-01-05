@@ -9,12 +9,11 @@ set(CONFIG px4_sitl_default CACHE STRING "" FORCE)
 add_subdirectory(../PX4-Autopilot/PX4-Autopilot ${CMAKE_CURRENT_BINARY_DIR}/PX4-Autopilot)
 
 install(PROGRAMS
-    scripts/px4sitl.sh
     scripts/qgroundcontrol.sh
     DESTINATION bin
 )
 
-foreach(DIR cdinit_services)
+foreach(DIR cdinit_services config)
     install(DIRECTORY ${DIR}
         DESTINATION share/${PROJECT_NAME}/
         USE_SOURCE_PERMISSIONS

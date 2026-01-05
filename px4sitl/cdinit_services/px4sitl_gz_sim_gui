@@ -5,9 +5,8 @@ stop-timeout = 20.0
 
 log-type = pipe
 
-depends-on = px4sitl_ros
 depends-on = px4sitl_gz_wait
-depends-ms = cdinit_log@px4sitl_gz_gui
+depends-ms = cdinit_log@px4sitl_gz_sim_gui
 
 options = always-chain
-chain-to = cdinit_shutdown
+chain-to = cdinit_shutdown_debug

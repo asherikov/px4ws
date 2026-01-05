@@ -1,0 +1,2 @@
+type = internal
+depends-on = px4sitl_gz_sim_$1

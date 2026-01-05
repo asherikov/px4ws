@@ -2,9 +2,6 @@ type = internal
 
 stop-timeout = 20.0
 
-depends-on = px4sitl_gz_headless
-depends-on = px4sitl_dds_agent
-depends-on = px4sitl_gz_clock
-
-options = always-chain
-chain-to = cdinit_shutdown
+depends-on = px4sitl_gz_sim@$1
+depends-on = px4sitl_ros_dds_agent
+depends-on = px4sitl_ros_gz_clock

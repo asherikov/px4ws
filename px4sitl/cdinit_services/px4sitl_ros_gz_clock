@@ -7,8 +7,8 @@ command = ros2 run ros_gz_bridge parameter_bridge \
 stop-timeout = 20.0
 
 log-type = pipe
-depends-on = px4sitl_gz_headless
-depends-ms = cdinit_log@px4sitl_gz_clock
+depends-on = px4sitl_gz_sim_headless
+depends-ms = cdinit_log@px4sitl_ros_gz_clock
 
 options = always-chain
-chain-to = cdinit_shutdown
+chain-to = cdinit_shutdown_debug
