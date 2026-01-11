@@ -1,0 +1,10 @@
+type = process
+command = sh -c "gz topic -e --topic /world/default/model/drone_1/link/base_link/sensor/imu_sensor/imu | grep 'linear_acceleration ' -A 3 | grep 'z:'"
+
+stop-timeout = 20.0
+
+options = shares-console
+depends-on = px4sitl_gz_sim_headless
+depends-on = px4sitl_gz_sim_imu_debug_drone
+depends-on = cdinit_timeout@4
+

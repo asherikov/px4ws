@@ -56,10 +56,15 @@ Binary package
 Running
 -------
 
-- Start services:
-
+- Start services, `QGroundControl-x86_64.AppImage` has to be present in an
+  execution path:
 ```
-cdinit.sh start px4sitl_ros@gui px4sitl_drone_x500@gui PX4SITL_WORLD_SDF_NAME=default
+cdinit.sh start px4sitl_ros@gui px4sitl_drone_x500@gui PX4SITL_WORLD_SDF_NAME=walls
+```
+
+- Start without gui and ROS:
+```
+cdinit.sh start px4sitl_gz_sim_headless px4sitl_drone_x500@headless PX4SITL_WORLD_SDF_NAME=default
 ```
 
 - Terminate by closing Gazebo gui, or with `cdinit.sh shutdown`. Since all
