@@ -1,6 +1,8 @@
 type = process
 env-file = $1
-command = ros2 run px4_offboard_demo_py demo_node --ros-args -r __ns:=/${PX4SITL_ROS_NAMESPACE} -p use_sim_time:=true
+command = ros2 run px4_offboard_demo_py demo_node \
+    --config-path ${CDINIT_INSTALL_ROOT_PACKAGE_px4_offboard_demo_py}/share/px4_offboard_demo_py/config/default.yaml \
+    --ros-args -r __ns:=/${PX4SITL_ROS_NAMESPACE} -p use_sim_time:=true
 
 stop-timeout = 20.0
 

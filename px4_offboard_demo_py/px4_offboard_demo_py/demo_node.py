@@ -1,6 +1,7 @@
 """ROS2 node that interacts with PX4-Autopilot using px4_msgs."""
 
 import os
+import argparse
 
 import ament_index_python
 
@@ -16,20 +17,11 @@ from .px4_state_machine import PX4TakeoffStateMachine
 class PX4OffboardDemoNode(Node):
     """PX4OffboardDemoNode."""
 
-    def __init__(self):
+    def __init__(self, config_path):
         """PX4OffboardDemoNode."""
         super().__init__('demo_node')
 
         # Load configuration from YAML file
-        # First try to find config file using ament resource system
-        config_path = None
-        try:
-            package_share_path = ament_index_python.packages.get_package_share_directory('px4_offboard_demo_py')
-            config_path = os.path.join(package_share_path, 'config', 'demo_config.yaml')
-        except (ImportError, ament_index_python.packages.PackageNotFoundError):
-            # Fallback to the old method if ament_index_python is not available
-            config_path = os.path.join(os.path.dirname(__file__), 'config', 'demo_config.yaml')
-
         try:
             with open(config_path, 'r', encoding='utf-8') as file:
                 self.config = yaml.safe_load(file)
@@ -69,9 +61,29 @@ class PX4OffboardDemoNode(Node):
 
 def main(args=None):
     """start."""
-    rclpy.init(args=args)
+    parser = argparse.ArgumentParser(description='PX4 Offboard Demo Node')
+    parser.add_argument(
+        '--config-path',
+        type=str,
+        help='Path to the configuration file (YAML format)'
+    )
+    parsed_args, remaining_args = parser.parse_known_args()
 
-    demo_node = PX4OffboardDemoNode()
+    # Determine config path - use provided path or fall back to default
+    config_path = parsed_args.config_path
+    if config_path is None:
+        # First try to find config file using ament resource system
+        try:
+            package_share_path = ament_index_python.packages.get_package_share_directory('px4_offboard_demo_py')
+            config_path = os.path.join(package_share_path, 'config', 'default.yaml')
+        except (ImportError, ament_index_python.packages.PackageNotFoundError):
+            # Fallback to the old method if ament_index_python is not available
+            config_path = os.path.join(os.path.dirname(__file__), 'config', 'default.yaml')
+
+    # Pass the remaining args to rclpy.init to maintain ROS2 functionality
+    rclpy.init(args=remaining_args if args is None else args)
+
+    demo_node = PX4OffboardDemoNode(config_path=config_path)
 
     try:
         # Use spin_once in a loop to check for completion, using timeout from config
