@@ -1,0 +1,5 @@
+@include ${CDINIT_INCLUDE_DIR}/process_required
+command = gz sim -g --verbose 4
+
+depends-on = px4sitl_gz_wait
+depends-ms = cdinit_log@px4sitl_gz_sim_gui

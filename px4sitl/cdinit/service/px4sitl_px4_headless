@@ -1,10 +1,11 @@
-type = process
+@include ${CDINIT_INCLUDE_DIR}/process_required
+
 env-file = $1
 command = env \
     PATH=${PATH}:${CDINIT_INSTALL_ROOT_PACKAGE_px4sitl}/px4/bin \
     PX4_GZ_WORLD=${PX4SITL_WORLD_SDF_NAME} \
     PX4_GZ_STANDALONE=YES \
-    PX4_UXRCE_DDS_NS=px4_drone_${PX4SITL_PX4_INSTANCE} \
+    PX4_UXRCE_DDS_NS=${PX4SITL_ROS_NAMESPACE} \
     PX4_PARAM_NAV_DLL_ACT=0 \
     PX4_PARAM_NAV_RCL_ACT=0 \
     PX4_PARAM_COM_RCL_EXCEPT=4 \
@@ -15,12 +16,6 @@ command = env \
         -i ${PX4SITL_PX4_INSTANCE} \
         ${CDINIT_INSTALL_ROOT_PACKAGE_px4sitl}/px4/etc
 
-stop-timeout = 20.0
-
-log-type = pipe
-
 depends-on = px4sitl_gz_wait
-depends-ms = cdinit_log@px4sitl_px4_headless@$1
+depends-ms = cdinit_log@px4sitl_px4_headless
 
-options = always-chain
-chain-to = cdinit_shutdown_debug

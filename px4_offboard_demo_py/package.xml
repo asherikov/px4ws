@@ -13,6 +13,7 @@
 
   <exec_depend>ros2launch</exec_depend>
   <exec_depend>cdinit_ros2</exec_depend>
+  <exec_depend>px4sitl</exec_depend>
 
   <export>
     <build_type>ament_python</build_type>

@@ -1,0 +1,4 @@
+@include ${CDINIT_INCLUDE_DIR}/process_required
+command = MicroXRCEAgent udp4 -p 8888
+
+depends-ms = cdinit_log@px4sitl_ros_dds_agent

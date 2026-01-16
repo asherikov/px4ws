@@ -10,7 +10,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        ('share/' + package_name + '/cdinit_services', ['cdinit_services/px4_offboard_demo_py_node']),
+        ('share/' + package_name + '/cdinit/service', ['cdinit/service/px4_offboard_demo_py_node']),
         ('share/' + package_name + '/config', ['px4_offboard_demo_py/config/demo_config.yaml']),
     ],
     install_requires=['setuptools', 'pyyaml'],
