@@ -17,5 +17,5 @@ command = env \
         ${CDINIT_INSTALL_ROOT_PACKAGE_px4sitl}/px4/etc
 
 depends-on = px4sitl_gz_wait
-depends-ms = cdinit_log@px4sitl_px4_headless
+depends-ms = cdinit_log@px4sitl_px4_headless@$1
 
