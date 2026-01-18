@@ -10,7 +10,7 @@ repositories:
     cdinit:
         type: git
         url: https://github.com/asherikov/cdinit.git
-        version: d4398e9f7adec7173e93ab8dea187a70818c2cfa
+        version: b359419f7b9c7773344674b59f1435300bac4f08
     px4_msgs:
         type: git
         url: https://github.com/PX4/px4_msgs.git
