@@ -1,2 +1,0 @@
-type = internal
-depends-on = px4sitl_px4_$1@${CDINIT_INSTALL_ROOT_PACKAGE_px4sitl}/share/px4sitl/config/x500.drone
